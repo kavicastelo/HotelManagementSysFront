@@ -62,4 +62,26 @@
   }
 }
 
+.container{
+  .check-availability-div2 {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10%;
+
+    .check-available-btn {
+      width: 97%;
+      height: 40px;
+      text-align: center;
+      color: white;
+      border: none;
+      margin: 10px;
+      background-color: #ccbaa4;
+    }
+
+    .check-available-btn:hover {
+      background-color: #dccab4;
+    }
+  }
+}
+
 

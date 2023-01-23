@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  activeAvailableBtn = false;
+
+  public selectCustomer='';
+  public selectChildren='';
+
   ArrivalMinDate = new Date();
   public DepartureMinDate = new Date();
   public ArrivalMaxDate = new Date();
@@ -14,6 +19,22 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  availabilityBtn(){
+    const arrivalDate = (<HTMLInputElement>document.querySelector('.arrivalDate')).value;
+    const departureDate = (<HTMLInputElement>document.querySelector('.departureDate')).value;
+
+    if (this.ArrivalMinDate>=this.DepartureMinDate || this.selectCustomer==""){
+      return
+    }
+    else{
+      localStorage.setItem('customers',this.selectCustomer);
+      localStorage.setItem('children',this.selectChildren);
+      localStorage.setItem('arrivalDate',arrivalDate);
+      localStorage.setItem('departureDate',departureDate);
+      this.activeAvailableBtn = true;
+    }
   }
 
 }
