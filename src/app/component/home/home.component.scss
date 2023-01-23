@@ -1,0 +1,65 @@
+.carousel-wrapper{
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  .carousel-caption {
+    margin-bottom: 5%;
+
+    h5 {
+      font-family: 'Barlow', sans-serif;
+      margin: 20px 0;
+      font-size: 2vw;
+      color: white;
+      text-shadow: 1px 1px 2px black;
+    }
+
+    h2 {
+      font-weight: bold;
+      color: white;
+      font-family: 'Explora', cursive;
+      margin: 15px 0;
+      font-size: 9vw;
+      text-shadow: 1px 1px 2px black;
+    }
+
+    button {
+      padding: 10px 20px;
+      border-radius: 20px;
+      border: none;
+      background-color: red;
+      color: white;
+      font-size: 18px;
+      margin: 10px 0;
+    }
+
+    button:hover {
+      background-color: brown;
+    }
+  }
+
+  .check-availability-div{
+    position: absolute;
+    width: 55%;
+    height: auto;
+    padding: 10px;
+    z-index: 2;
+    margin-top: 15%;
+    background-color: rgba(0,0,0,0.6);
+
+    .check-available-btn{
+      width: 97%;
+      height: 40px;
+      text-align: center;
+      color: white;
+      border: none;
+      margin: 10px;
+      background-color: #ccbaa4;
+    }
+    .check-available-btn:hover{
+      background-color: #dccab4;
+    }
+  }
+}
+
+

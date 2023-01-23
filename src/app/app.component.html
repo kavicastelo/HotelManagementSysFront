@@ -26,9 +26,7 @@
                 <a href="#">Room Single</a>
               </div>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link" href="#">Elements</a>
-            </li>
+
             <li class="nav-item dropdown">
               <a class="nav-link" href="#" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
               <div class="dropdown-content">
@@ -41,10 +39,8 @@
             <li class="nav-item dropdown">
               <a class="nav-link" href="#" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
               <div class="dropdown-content">
-                <a routerLink="/not-found">About</a>
-                <a routerLink="/faq">Dinning</a>
-                <a href="#">SPA</a>
-                <a href="#">Terms & Conditions</a>
+                <a routerLink="/not-found">Blog List</a>
+                <a routerLink="/faq">Blog Single</a>
               </div>
             </li>
             <li class="nav-item">
@@ -59,4 +55,7 @@
     </nav>
 
   </div>
+
+  <router-outlet></router-outlet>
+
 </div>

@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  ArrivalMinDate = new Date();
+  public DepartureMinDate = new Date();
+  public ArrivalMaxDate = new Date();
+
   constructor() { }
 
   ngOnInit(): void {
