@@ -42,7 +42,8 @@
         </mat-form-field>
       </p>
     </div>
-    <button class="check-available-btn" (click)="availabilityBtn()" [routerLink]="activeAvailableBtn?'/hotel-booking':''">Double
+    <button class="check-available-btn" (click)="availabilityBtn()"
+            [routerLink]="activeAvailableBtn?'/hotel-booking':''">Double
       Tap to Check Availability
     </button>
   </div>
@@ -125,7 +126,8 @@
         </mat-form-field>
       </p>
     </div>
-    <button class="check-available-btn" (click)="availabilityBtn()" [routerLink]="activeAvailableBtn?'/hotel-booking':''">Double
+    <button class="check-available-btn" (click)="availabilityBtn()"
+            [routerLink]="activeAvailableBtn?'/hotel-booking':''">Double
       Tap to Check Availability
     </button>
   </div>
@@ -136,39 +138,96 @@
     <span>ACCOMMODATION & COMFORT</span>
     <h2>Eco-Inspired Lodging</h2>
     <div class="room-list">
-      <div class="card room-item" style="width: 18rem;">
+      <div class="card room-item" style="width: 18rem;" routerLink="/family">
         <img src="./assets/img/home/normal-room-1.jpg" class="card-img-top" alt="room-1">
         <div class="card-body">
           <h3>Family</h3>
           <p class="card-text">Starting from $55.0/ Night</p>
         </div>
       </div>
-      <div class="card room-item" style="width: 18rem;">
+      <div class="card room-item" style="width: 18rem;" routerLink="/penthouse">
         <img src="./assets/img/home/normal-room-2.jpg" class="card-img-top" alt="room-2">
         <div class="card-body">
           <h3>Penthouse Suite</h3>
           <p class="card-text">Starting from $75.0/ Night</p>
         </div>
       </div>
-      <div class="card room-item" style="width: 18rem;">
+      <div class="card room-item" style="width: 18rem;" routerLink="/family-double">
         <img src="./assets/img/home/normal-room-3.jpg" class="card-img-top" alt="room-3">
         <div class="card-body">
           <h3>Family Double</h3>
           <p class="card-text">Starting from $80.0/ Night</p>
         </div>
       </div>
-      <div class="card room-item" style="width: 18rem;">
+      <div class="card room-item" style="width: 18rem;" routerLink="/executive">
         <img src="./assets/img/home/normal-room-4.jpg" class="card-img-top" alt="room-4">
         <div class="card-body">
           <h3>Executive Room</h3>
           <p class="card-text">Starting from $35.0/ Night</p>
         </div>
       </div>
-      <div class="card room-item" style="width: 18rem;">
+      <div class="card room-item" style="width: 18rem;" routerLink="/junior">
         <img src="./assets/img/home/normal-room-5.jpg" class="card-img-top" alt="room-5">
         <div class="card-body">
           <h3>Junior Suite</h3>
           <p class="card-text">Starting from $20.0/ Night</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="home-div-3 d-lg-flex">
+  <div class="div-3-left-side">
+    <img src="./assets/img/home/assest-image-1.jpg" alt="assets-1">
+  </div>
+  <div class="div-3-right-side d-flex flex-column justify-content-center">
+    <h3>Get Home-like Ambience</h3>
+    <p>A self-described luxury temporary residence, the AKA Beverly Hills offers guests the space and comfort of an
+      apartment, with the service and amenities you’d expect at a five-star hotel.</p>
+    <button routerLink="/penthouse">
+      VIEW EXCLUSIVE ROOM
+    </button>
+  </div>
+</div>
+
+<div class="container">
+  <div class="home-div-4">
+    <span>VACATION AT EASE</span>
+    <h2>Inspired Incentives</h2>
+    <div class="col-12">
+      <div class="row">
+        <div class="col-6 col-lg-3">
+          <div class="div-4-item">
+            <mat-icon>flight</mat-icon>
+            <span>Airport Pickup</span>
+            <p>We’ll pick up from airport while you comfy on your ride.</p>
+            <img src="./assets/img/home/div-4-plane-assets.webp" alt="...">
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="div-4-item">
+            <mat-icon>fastfood</mat-icon>
+            <span>Complementary Breakfast</span>
+            <p>Don’t spend a dime on breakfast. It’s on us, totally.</p>
+            <img src="./assets/img/home/div-4-breakfast-assets.jpg" alt="...">
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="div-4-item">
+            <mat-icon>two_wheeler</mat-icon>
+            <span>City Tour Guide</span>
+            <p>Explore city with our in-house tour guide. We got your back.</p>
+            <img src="./assets/img/home/div-4-travel-assets.jpg" alt="...">
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="div-4-item">
+            <mat-icon>outdoor_grill</mat-icon>
+            <span>Beach BBQ Party</span>
+            <p>Kick back on the beach & cook up recipes from our masterchef.</p>
+            <img src="./assets/img/home/div-4-bbq-assets.jpg" alt="...">
+          </div>
         </div>
       </div>
     </div>

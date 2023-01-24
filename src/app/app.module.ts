@@ -13,25 +13,37 @@ import {MatNativeDateModule} from "@angular/material/core";
 import {MatSelectModule} from "@angular/material/select";
 import {FormsModule} from "@angular/forms";
 import { HotelBookingComponent } from './component/hotel-booking/hotel-booking.component';
+import { PenthouseComponent } from './component/home/rooms/penthouse/penthouse.component';
+import { FamilyComponent } from './component/home/rooms/family/family.component';
+import { FamilyDoubleComponent } from './component/home/rooms/family-double/family-double.component';
+import { ExecutiveComponent } from './component/home/rooms/executive/executive.component';
+import { JuniorComponent } from './component/home/rooms/junior/junior.component';
+import {MatIconModule} from "@angular/material/icon";
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     NotFoundComponent,
-    HotelBookingComponent
+    HotelBookingComponent,
+    PenthouseComponent,
+    FamilyComponent,
+    FamilyDoubleComponent,
+    ExecutiveComponent,
+    JuniorComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatFormFieldModule,
-    MatDatepickerModule,
-    MatInputModule,
-    MatNativeDateModule,
-    MatSelectModule,
-    FormsModule,
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MatFormFieldModule,
+        MatDatepickerModule,
+        MatInputModule,
+        MatNativeDateModule,
+        MatSelectModule,
+        FormsModule,
+        MatIconModule,
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
