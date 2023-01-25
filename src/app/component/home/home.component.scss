@@ -273,3 +273,46 @@
   }
 
 }
+
+.background-image{
+  position: relative;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+
+  .overlay-mf {
+    background-color: #111111;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    opacity: .5;
+  }
+
+  .mat-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    color: white;
+    z-index: 1;
+    margin: 2%;
+  }
+
+  span{
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    margin: 2% 0;
+    z-index: 1;
+  }
+
+  h3{
+    color: white;
+    font-size: 50px;
+    font-family: 'Aboreto', cursive;
+    z-index: 1;
+  }
+}
