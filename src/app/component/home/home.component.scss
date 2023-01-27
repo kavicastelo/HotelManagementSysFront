@@ -376,3 +376,70 @@
     }
   }
 }
+
+.home-price-div{
+  width: 100%;
+  padding: 5% 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  span{
+    font-size: 16px;
+    font-family: 'Kanit', sans-serif;
+    color: black;
+  }
+
+  h2{
+    font-family: 'Aboreto', cursive;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+  }
+
+  p{
+    text-decoration: underline;
+    font-weight: bold;
+    font-family: 'Kanit', sans-serif;
+    color: dimgray;
+  }
+  p:hover{
+    cursor: pointer;
+    color: #ccbaa4;
+    text-shadow: 1px 1px 2px #ccbaa4;
+  }
+
+  .price-div{
+    width: 100%;
+    min-height: 200px;
+    align-items: center;
+    justify-content: center;
+
+    .price-div-content{
+      width: 100%;
+      min-height: 150px;
+      border: 1px solid silver;
+      margin: 2%;
+      border-radius: 5px;
+
+      table{
+        width: 100%;
+
+        tr>td{
+          border-bottom: 1px solid silver;
+          text-align: center;
+          padding: 2.5%;
+          color: black;
+          font-weight: bold;
+          font-size: 14px;
+          font-family: 'Kanit', sans-serif;
+
+          .mat-icon{
+            color: #dccab4;
+          }
+        }
+      }
+    }
+  }
+}
