@@ -19,6 +19,8 @@ import { FamilyDoubleComponent } from './component/home/rooms/family-double/fami
 import { ExecutiveComponent } from './component/home/rooms/executive/executive.component';
 import { JuniorComponent } from './component/home/rooms/junior/junior.component';
 import {MatIconModule} from "@angular/material/icon";
+import { BookingList1Component } from './component/hotel-booking/booking-list1/booking-list1.component';
+import { BookingList2Component } from './component/hotel-booking/booking-list2/booking-list2.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import {MatIconModule} from "@angular/material/icon";
     FamilyComponent,
     FamilyDoubleComponent,
     ExecutiveComponent,
-    JuniorComponent
+    JuniorComponent,
+    BookingList1Component,
+    BookingList2Component
   ],
     imports: [
         BrowserModule,

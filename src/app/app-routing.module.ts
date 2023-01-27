@@ -8,6 +8,8 @@ import {PenthouseComponent} from "./component/home/rooms/penthouse/penthouse.com
 import {FamilyDoubleComponent} from "./component/home/rooms/family-double/family-double.component";
 import {ExecutiveComponent} from "./component/home/rooms/executive/executive.component";
 import {JuniorComponent} from "./component/home/rooms/junior/junior.component";
+import {BookingList1Component} from "./component/hotel-booking/booking-list1/booking-list1.component";
+import {BookingList2Component} from "./component/hotel-booking/booking-list2/booking-list2.component";
 
 const routes: Routes = [
   {path:"", redirectTo:"/home",pathMatch:"full"},
@@ -17,7 +19,10 @@ const routes: Routes = [
   {path:"family-double",component:FamilyDoubleComponent},
   {path:"executive",component:ExecutiveComponent},
   {path:"junior",component:JuniorComponent},
-  {path:"hotel-booking", component:HotelBookingComponent},
+  {path:"hotel-booking", component:HotelBookingComponent, children:[
+      {path:"list-1", component:BookingList1Component},
+      {path:"list-2", component:BookingList2Component},
+    ]},
   {path:"**", component:NotFoundComponent}
 ];
 
