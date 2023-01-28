@@ -20,6 +20,7 @@ const routes: Routes = [
   {path:"executive",component:ExecutiveComponent},
   {path:"junior",component:JuniorComponent},
   {path:"hotel-booking", component:HotelBookingComponent, children:[
+      {path:"", redirectTo:"/hotel-booking/list-1", pathMatch:"full"},
       {path:"list-1", component:BookingList1Component},
       {path:"list-2", component:BookingList2Component},
     ]},
