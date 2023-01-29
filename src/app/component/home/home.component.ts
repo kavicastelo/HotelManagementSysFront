@@ -25,7 +25,8 @@ export class HomeComponent implements OnInit {
     const arrivalDate = (<HTMLInputElement>document.querySelector('.arrivalDate')).value;
     const departureDate = (<HTMLInputElement>document.querySelector('.departureDate')).value;
 
-    if (this.ArrivalMinDate>=this.DepartureMinDate || this.selectCustomer==""){
+    if (this.selectCustomer==''|| this.selectChildren==''){
+      console.log(this.activeAvailableBtn)
       return
     }
     else{
@@ -34,6 +35,7 @@ export class HomeComponent implements OnInit {
       localStorage.setItem('arrivalDate',arrivalDate);
       localStorage.setItem('departureDate',departureDate);
       this.activeAvailableBtn = true;
+      console.log(this.activeAvailableBtn)
     }
   }
 

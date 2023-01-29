@@ -34,9 +34,9 @@
           <p style="margin: 10px; width: 95%;">
             <mat-form-field appearance="outline" style="width: 100%;">
               <mat-label>Adult</mat-label>
-              <mat-select [(ngModel)]="selectCustomer">
-                <mat-option>2</mat-option>
-                <mat-option>4</mat-option>
+              <mat-select [(ngModel)]="adultValue">
+                <mat-option value="2">2</mat-option>
+                <mat-option value="3">4</mat-option>
               </mat-select>
             </mat-form-field>
           </p>
@@ -44,10 +44,10 @@
           <p style="margin: 10px; width: 95%;">
             <mat-form-field appearance="outline" style="width: 100%;">
               <mat-label>Children</mat-label>
-              <mat-select [(ngModel)]="selectChildren">
-                <mat-option>1</mat-option>
-                <mat-option>2</mat-option>
-                <mat-option>3</mat-option>
+              <mat-select [(ngModel)]="childrenValue">
+                <mat-option value="1">1</mat-option>
+                <mat-option value="2">2</mat-option>
+                <mat-option value="3">3</mat-option>
               </mat-select>
             </mat-form-field>
           </p>

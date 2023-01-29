@@ -9,10 +9,6 @@ export class HotelBookingComponent implements OnInit {
 
   ArrivalMinDate = new Date();
   public DepartureMinDate = new Date();
-  public ArrivalMaxDate = new Date();
-
-  public selectCustomer='';
-  public selectChildren='';
 
   public arrivalValue = localStorage.getItem("arrivalDate");
   public arrivalValueDate = new Date(''+this.arrivalValue);
