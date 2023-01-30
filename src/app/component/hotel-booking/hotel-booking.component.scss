@@ -28,6 +28,20 @@
 
     .card{
       margin-bottom: 2%;
+
+      .card-body{
+        .card-3{
+          margin: 10px 0;
+          .mat-icon, span{
+            color: dimgray;
+          }
+
+          span{
+            font-family: 'Kanit', sans-serif;
+            font-weight: bold;
+          }
+        }
+      }
     }
   }
 }
