@@ -2,14 +2,24 @@
   padding-top: 5%;
 
   .right-div{
-    border: 1px solid red;
     min-width: 70%;
     flex: 1;
     min-height: 300px;
+
+    button{
+      border: 1px solid silver;
+      padding: 1% 2%;
+      margin: 1%;
+      color: dimgray;
+      background-color: white;
+    }
+    button:hover{
+      background-color: #dccab4;
+      color: white;
+    }
   }
 
   .left-div{
-    border: 1px solid red;
     flex: 1;
     min-height: 300px;
     display: flex;
