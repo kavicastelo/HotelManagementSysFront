@@ -40,3 +40,96 @@
     }
   }
 }
+
+.container{
+  padding-top: 5%;
+
+  .right-div{
+    min-width: 70%;
+    flex: 1;
+    min-height: 300px;
+    padding: 1%;
+
+    .card{
+      margin-bottom: 2%;
+
+      .card-body{
+        * {
+          box-sizing: border-box;
+        }
+
+        $max-img-width: 1600px;
+        $max-img-height: 900px;
+
+        img {
+          width: 100%;
+          vertical-align: top;
+        }
+
+        .gallery {
+          display: flex;
+          margin: 10px auto;
+          max-width: $max-img-width;
+          position: relative;
+          padding-top: $max-img-height/$max-img-width * 100%;
+
+          &__img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+          }
+
+          &__thumb {
+            padding-top: 6px;
+            margin: 6px;
+            display: block;
+          }
+
+          &__selector {
+            position: absolute;
+            opacity: 0;
+            visibility: hidden;
+
+            &:checked {
+              + .gallery__img {
+                opacity: 1;
+              }
+              ~ .gallery__thumb > img {
+                box-shadow: 0 0 0 3px #0be2f6;;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .left-div{
+    flex: 1;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1%;
+
+    .card{
+      margin-bottom: 2%;
+
+      .card-body{
+        .card-3{
+          margin: 10px 0;
+          .mat-icon, span{
+            color: dimgray;
+          }
+
+          span{
+            font-family: 'Kanit', sans-serif;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
