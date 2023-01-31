@@ -102,11 +102,21 @@
             }
           }
         }
+
+        span{
+          color: dimgray;
+          margin-bottom: 20px;
+        }
+
+        .mat-icon{
+          color: dimgray;
+        }
       }
     }
 
     .switch-div{
       width: 100%;
+      margin-bottom: 2%;
 
       .overview-div {
         border: 1px solid silver;

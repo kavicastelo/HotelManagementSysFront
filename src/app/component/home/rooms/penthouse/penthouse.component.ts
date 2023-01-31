@@ -19,6 +19,7 @@ export class PenthouseComponent implements OnInit {
 
   overviewActive:boolean = true;
   featureActive:boolean = false;
+  rate: any = 0;
 
   overviewOnClick(){
     this.overviewActive =! this.overviewActive;
