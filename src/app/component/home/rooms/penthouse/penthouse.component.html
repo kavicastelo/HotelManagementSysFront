@@ -56,6 +56,69 @@
         </div>
       </div>
 
+      <div class="switch-div">
+        <div class="d-flex">
+          <button (click)="overviewOnClick()" [ngStyle]="{'background-color': overviewActive ? '#dccab4' : 'black'}">Overview</button>
+          <button (click)="featureOnClick()" [ngStyle]="{'background-color': featureActive ? '#dccab4' : 'black'}">Features</button>
+        </div>
+        <div class="overview-div" [ngStyle]="{'display': overviewActive ? 'block' : 'none'}">
+          <div class="d-md-flex">
+            <div class="overview-context">
+              <p>Room Size: <span>41 – 45 sq m / 441 – 484 sq ft</span></p>
+              <p>Occupancy: <span>Up to 3 adults</span></p>
+              <p>View: <span>Panama Sea view</span></p>
+              <p>Smoking: <span>Yes</span></p>
+            </div>
+            <div class="overview-context">
+              <p>Bed Size: <span>King or Regular</span></p>
+              <p>Location: <span>2/F – 6/F (Original Building)</span></p>
+              <p>Bed: <span>250 Thread Count Sheets</span></p>
+              <p>Room Service: <span>Yes</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="features-div" [ngStyle]="{'display': featureActive ? 'block' : 'none'}">
+          <div class="d-md-flex">
+            <div class="feature-context">
+              <div class="d-flex align-items-center">
+                <mat-icon>check_small</mat-icon>&nbsp;&nbsp;
+                <span>Indoor living room</span>
+              </div>
+              <div class="d-flex align-items-center">
+                <mat-icon>check_small</mat-icon>&nbsp;&nbsp;
+                <span>Open garden with a swing</span>
+              </div>
+              <div class="d-flex align-items-center">
+                <mat-icon>check_small</mat-icon>&nbsp;&nbsp;
+                <span>Bonfire Facility</span>
+              </div>
+              <div class="d-flex align-items-center">
+                <mat-icon>check_small</mat-icon>&nbsp;&nbsp;
+                <span>Working Table</span>
+              </div>
+            </div>
+            <div class="feature-context">
+              <div class="d-flex align-items-center">
+                <mat-icon>check_small</mat-icon>&nbsp;&nbsp;
+                <span>Wooden veranda</span>
+              </div>
+              <div class="d-flex align-items-center">
+                <mat-icon>check_small</mat-icon>&nbsp;&nbsp;
+                <span>Private BBQ area</span>
+              </div>
+              <div class="d-flex align-items-center">
+                <mat-icon>check_small</mat-icon>&nbsp;&nbsp;
+                <span>Hammock</span>
+              </div>
+              <div class="d-flex align-items-center">
+                <mat-icon>check_small</mat-icon>&nbsp;&nbsp;
+                <span>A/C (Surfer Dude)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
     <div class="left-div">
 

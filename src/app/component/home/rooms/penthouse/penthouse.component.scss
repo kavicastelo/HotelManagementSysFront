@@ -104,6 +104,58 @@
         }
       }
     }
+
+    .switch-div{
+      width: 100%;
+
+      .overview-div {
+        border: 1px solid silver;
+        width: 100%;
+        border-radius: 0 0 5px 5px;
+
+        .overview-context{
+          flex: 1;
+          padding: 2%;
+
+          p{
+            font-weight: bold;
+            font-size: 14px;
+
+            span{
+              font-weight: normal;
+              color: dimgray;
+            }
+          }
+        }
+      }
+
+      .features-div{
+        border: 1px solid silver;
+        width: 100%;border-radius: 0 0 5px 5px;
+
+        .feature-context{
+          flex: 1;
+          padding: 2%;
+
+          .mat-icon{
+            color: #dccab4;
+          }
+
+          span{
+            color: dimgray;
+          }
+        }
+      }
+
+      button{
+        height: 40px;
+        border-radius: 5px 5px 0 0;
+        border: none;
+        margin-right: 5px;
+        padding: 0 20px;
+        color: white;
+      }
+    }
   }
 
   .left-div{

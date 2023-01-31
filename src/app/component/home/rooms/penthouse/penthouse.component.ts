@@ -17,6 +17,23 @@ export class PenthouseComponent implements OnInit {
   public adultValue = localStorage.getItem("customers");
   public childrenValue = localStorage.getItem("children");
 
+  overviewActive:boolean = true;
+  featureActive:boolean = false;
+
+  overviewOnClick(){
+    this.overviewActive =! this.overviewActive;
+    if (this.overviewActive){
+      this.featureActive = false;
+    }
+  }
+
+  featureOnClick(){
+    this.featureActive =! this.featureActive;
+    if (this.featureActive){
+      this.overviewActive = false;
+    }
+  }
+
   constructor() { }
 
   ngOnInit(): void {
