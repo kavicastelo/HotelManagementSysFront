@@ -22,6 +22,7 @@ import {MatIconModule} from "@angular/material/icon";
 import {BookingList1Component} from './component/hotel-booking/booking-list1/booking-list1.component';
 import {BookingList2Component} from './component/hotel-booking/booking-list2/booking-list2.component';
 import {MatTooltipModule} from "@angular/material/tooltip";
+import {MatCheckboxModule} from "@angular/material/checkbox";
 
 @NgModule({
   declarations: [
@@ -37,19 +38,20 @@ import {MatTooltipModule} from "@angular/material/tooltip";
     BookingList1Component,
     BookingList2Component
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatFormFieldModule,
-    MatDatepickerModule,
-    MatInputModule,
-    MatNativeDateModule,
-    MatSelectModule,
-    FormsModule,
-    MatIconModule,
-    MatTooltipModule,
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MatFormFieldModule,
+        MatDatepickerModule,
+        MatInputModule,
+        MatNativeDateModule,
+        MatSelectModule,
+        FormsModule,
+        MatIconModule,
+        MatTooltipModule,
+        MatCheckboxModule,
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

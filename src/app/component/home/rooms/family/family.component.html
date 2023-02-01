@@ -1,1 +1,301 @@
-<p>family works!</p>
+<div class="main-banner" style="background-image: url(/assets/img/home/normal-room-1.jpg)">
+  <div class="overlay-half"></div>
+  <div class="main-banner-content">
+    <div>
+      <h1>Family Room</h1>
+      <h3>Enjoy your moments with breathtaking view</h3>
+    </div>
+    <div>
+      <h3>Price per night</h3>
+      <h1>$20.0</h1>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="d-lg-flex justify-content-center">
+    <div class="right-div">
+
+      <div class="card" style="width: 100%">
+        <div class="card-body">
+          <h3 class="card-title">Little description</h3>
+          <hr>
+          <h5 class="card-subtitle mb-2 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores,
+            numquam, odit! Deserunt esse libero modi tempore ullam? Accusantium ad aliquam deserunt dolore dolorum
+            ducimus ea enim id labore laudantium molestias natus necessitatibus nemo, pariatur perspiciatis porro qui
+            voluptatem voluptates voluptatum!</h5>
+        </div>
+      </div>
+
+      <div class="card" style="width: 100%">
+        <div class="card-body">
+          <h3 class="card-title">Gallery of Elegance</h3>
+          <hr>
+          <section class="gallery">
+            <div class="gallery__item">
+              <input type="radio" id="img-1" checked name="gallery" class="gallery__selector"/>
+              <img class="gallery__img" src="./assets/img/gallery-images/image-1.jpg" alt="room 1"/>
+              <label for="img-1" class="gallery__thumb"><img src="./assets/img/gallery-images/gallery-image-1.jpg" alt="gallery 1"/></label>
+            </div>
+            <div class="gallery__item">
+              <input type="radio" id="img-2" name="gallery" class="gallery__selector"/>
+              <img class="gallery__img" src="./assets/img/gallery-images/image-2.jpg" alt="room 2"/>
+              <label for="img-2" class="gallery__thumb"><img src="./assets/img/gallery-images/gallery-image-2.jpg" alt="room 2"/></label>
+            </div>
+            <div class="gallery__item">
+              <input type="radio" id="img-3" name="gallery" class="gallery__selector"/>
+              <img class="gallery__img" src="./assets/img/gallery-images/image-3.jpg" alt="room 3"/>
+              <label for="img-3" class="gallery__thumb"><img src="./assets/img/gallery-images/gallery-image-3.jpg" alt="room 3"/></label>
+            </div>
+            <div class="gallery__item">
+              <input type="radio" id="img-4" name="gallery" class="gallery__selector"/>
+              <img class="gallery__img" src="./assets/img/gallery-images/image-4.jpg" alt="room 4"/>
+              <label for="img-4" class="gallery__thumb"><img src="./assets/img/gallery-images/gallery-image-4.jpg" alt="room 4"/></label>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <div class="switch-div">
+        <div class="d-flex">
+          <button (click)="overviewOnClick()" [ngStyle]="{'background-color': overviewActive ? '#dccab4' : 'black'}">Overview</button>
+          <button (click)="featureOnClick()" [ngStyle]="{'background-color': featureActive ? '#dccab4' : 'black'}">Features</button>
+        </div>
+        <div class="overview-div" [ngStyle]="{'display': overviewActive ? 'block' : 'none'}">
+          <div class="d-md-flex">
+            <div class="overview-context">
+              <p>Room Size: <span>41 – 45 sq m / 441 – 484 sq ft</span></p>
+              <p>Occupancy: <span>Up to 3 adults</span></p>
+              <p>View: <span>Panama Sea view</span></p>
+              <p>Smoking: <span>Yes</span></p>
+            </div>
+            <div class="overview-context">
+              <p>Bed Size: <span>King or Regular</span></p>
+              <p>Location: <span>2/F – 6/F (Original Building)</span></p>
+              <p>Bed: <span>250 Thread Count Sheets</span></p>
+              <p>Room Service: <span>Yes</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="features-div" [ngStyle]="{'display': featureActive ? 'block' : 'none'}">
+          <div class="d-md-flex">
+            <div class="feature-context">
+              <div class="d-flex align-items-center">
+                <mat-icon>check_small</mat-icon>&nbsp;&nbsp;
+                <span>Indoor living room</span>
+              </div>
+              <div class="d-flex align-items-center">
+                <mat-icon>check_small</mat-icon>&nbsp;&nbsp;
+                <span>Open garden with a swing</span>
+              </div>
+              <div class="d-flex align-items-center">
+                <mat-icon>check_small</mat-icon>&nbsp;&nbsp;
+                <span>Bonfire Facility</span>
+              </div>
+              <div class="d-flex align-items-center">
+                <mat-icon>check_small</mat-icon>&nbsp;&nbsp;
+                <span>Working Table</span>
+              </div>
+            </div>
+            <div class="feature-context">
+              <div class="d-flex align-items-center">
+                <mat-icon>check_small</mat-icon>&nbsp;&nbsp;
+                <span>Wooden veranda</span>
+              </div>
+              <div class="d-flex align-items-center">
+                <mat-icon>check_small</mat-icon>&nbsp;&nbsp;
+                <span>Private BBQ area</span>
+              </div>
+              <div class="d-flex align-items-center">
+                <mat-icon>check_small</mat-icon>&nbsp;&nbsp;
+                <span>Hammock</span>
+              </div>
+              <div class="d-flex align-items-center">
+                <mat-icon>check_small</mat-icon>&nbsp;&nbsp;
+                <span>A/C (Surfer Dude)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="width: 100%">
+        <div class="card-body">
+          <h3 class="card-title">Amenities</h3>
+          <hr>
+          <div class="row">
+            <div class="col-6 col-sm-6 col-md-4 col-lg-3 d-flex flex-column align-items-center justify-content-center">
+              <mat-icon>wifi</mat-icon>
+              <span>Wifi</span>
+            </div>
+            <div class="col-6 col-sm-6 col-md-4 col-lg-3 d-flex flex-column align-items-center justify-content-center">
+              <mat-icon>tv</mat-icon>
+              <span>Television</span>
+            </div>
+            <div class="col-6 col-sm-6 col-md-4 col-lg-3 d-flex flex-column align-items-center justify-content-center">
+              <mat-icon>newspaper</mat-icon>
+              <span>Local Newspaper</span>
+            </div>
+            <div class="col-6 col-sm-6 col-md-4 col-lg-3 d-flex flex-column align-items-center justify-content-center">
+              <mat-icon>bathtub</mat-icon>
+              <span>Bathtub</span>
+            </div>
+            <div class="col-6 col-sm-6 col-md-4 col-lg-3 d-flex flex-column align-items-center justify-content-center">
+              <mat-icon>restaurant</mat-icon>
+              <span>Room Breakfast</span>
+            </div>
+            <div class="col-6 col-sm-6 col-md-4 col-lg-3 d-flex flex-column align-items-center justify-content-center">
+              <mat-icon>hotel</mat-icon>
+              <span>Spa</span>
+            </div>
+            <div class="col-6 col-sm-6 col-md-4 col-lg-3 d-flex flex-column align-items-center justify-content-center">
+              <mat-icon>call</mat-icon>
+              <span>Wakeup Call</span>
+            </div>
+            <div class="col-6 col-sm-6 col-md-4 col-lg-3 d-flex flex-column align-items-center justify-content-center">
+              <mat-icon>liquor</mat-icon>
+              <span>Mini Bar</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="width: 100%">
+        <div class="card-body">
+          <h3 class="card-title">Reviews</h3>
+          <hr>
+          <h5 class="card-subtitle mb-2 text-muted">There are no reviews yet.</h5>
+        </div>
+      </div>
+
+      <div class="card" style="width: 100%">
+        <div class="card-body">
+          <h3 class="card-title">Be the first to review “Family Room”</h3>
+          <hr>
+          <h5 class="card-subtitle mb-2 text-muted">Your Rating</h5>
+          <!--          <bar-rating [(rate)]="rate" [max]="5">-->
+          <!--            <ng-template ratingActive>-->
+          <!--              <i class="bi bi-star-fill" style="margin: 2px; color: #edb867"></i>-->
+          <!--            </ng-template>-->
+          <!--            <ng-template ratingInactive>-->
+          <!--              <i class="bi bi-star-fill" style="margin: 2px; color: #d2d2d2"></i>-->
+          <!--            </ng-template>-->
+          <!--          </bar-rating>-->
+          <form action="" style="width: 100%">
+            <div class="mb-3">
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="your comment"></textarea>
+            </div>
+            <div class="d-md-flex align-items-center justify-content-center">
+              <div class="mb-3" style="width: 100%; margin: 1%">
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="your email">
+              </div>
+              <div class="mb-3" style="width: 100%; margin: 1%">
+                <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="your name">
+              </div>
+            </div>
+            <div><mat-checkbox class="save details">Save my name, email, and website in this browser for the next time I comment.</mat-checkbox></div>
+
+            <button style="padding: 5px 15px; color: #ffffff; background-color: #ccbaa4; border: none">ADD A REVIEW</button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+    <div class="left-div">
+
+      <div class="card" style="width: 100%">
+        <div class="card-body">
+          <h3 class="card-title">Your Reservation</h3>
+          <hr>
+
+          <h4>Arrival Date</h4>
+          <p style="margin: 10px; width: 95%">
+            <mat-form-field appearance="fill" style="width: 100%">
+              <mat-label>Arrival Date</mat-label>
+              <input matInput [matDatepicker]="$any(dp1)" disabled [min]="ArrivalMinDate"
+                     [(ngModel)]="arrivalValueDate" class="arrivalDate">
+              <mat-datepicker-toggle matSuffix [for]="dp1"></mat-datepicker-toggle>
+              <mat-datepicker #dp1 disabled="false"></mat-datepicker>
+            </mat-form-field>
+          </p>
+          <h4>Departure Date</h4>
+          <p style="margin: 10px; width: 95%">
+            <mat-form-field appearance="fill" style="width: 100%">
+              <mat-label>Departure Date</mat-label>
+              <input matInput [matDatepicker]="$any(dp2)" disabled [min]="DepartureMinDate"
+                     [(ngModel)]="departureValueDate" class="departureDate">
+              <mat-datepicker-toggle matSuffix [for]="dp2"></mat-datepicker-toggle>
+              <mat-datepicker #dp2 disabled="false"></mat-datepicker>
+            </mat-form-field>
+          </p>
+          <h4>Adults</h4>
+          <p style="margin: 10px; width: 95%;">
+            <mat-form-field appearance="outline" style="width: 100%;">
+              <mat-label>Adult</mat-label>
+              <mat-select [(ngModel)]="adultValue">
+                <mat-option value="2">2</mat-option>
+                <mat-option value="3">4</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </p>
+          <h4>Children</h4>
+          <p style="margin: 10px; width: 95%;">
+            <mat-form-field appearance="outline" style="width: 100%;">
+              <mat-label>Children</mat-label>
+              <mat-select [(ngModel)]="childrenValue">
+                <mat-option value="1">1</mat-option>
+                <mat-option value="2">2</mat-option>
+                <mat-option value="3">3</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </p>
+          <button
+            style="width: 100%; height: 40px; border: none; background-color: #ccbaa4; color: white; border-radius: 5px">
+            CHECK AVAILABILITY
+          </button>
+
+        </div>
+      </div>
+
+      <div class="card" style="width: 100%">
+        <div class="card-body">
+          <h3 class="card-title">Cart</h3>
+          <hr>
+          <h5 class="card-subtitle mb-2 text-muted">your cart is empty</h5>
+        </div>
+      </div>
+
+      <div class="card" style="width: 100%; margin-bottom: 10%">
+        <div class="card-body">
+          <h3 class="card-title">Why Hotel Luxe</h3>
+          <hr>
+          <div class="d-flex align-items-center card-3">
+            <mat-icon>gavel</mat-icon>&nbsp;
+            <span>Transparency – No hidden fees</span>
+          </div>
+          <div class="d-flex align-items-center card-3">
+            <mat-icon>flight</mat-icon>&nbsp;
+            <span>TComplementary Airport pickup</span>
+          </div>
+          <div class="d-flex align-items-center card-3">
+            <mat-icon>attach_money</mat-icon>&nbsp;
+            <span>Value for money</span>
+          </div>
+          <div class="d-flex align-items-center card-3">
+            <mat-icon>hotel</mat-icon>&nbsp;
+            <span>Luxurious rooms for your comfort</span>
+          </div>
+          <div class="d-flex align-items-center card-3">
+            <mat-icon>sensor_occupied</mat-icon>&nbsp;
+            <span>Easy refund on online booking</span>
+          </div>
+          <div class="d-flex align-items-center card-3">
+            <mat-icon>auto_awesome</mat-icon>&nbsp;
+            <span>Award-winning hotel on Trip Adviosr</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
