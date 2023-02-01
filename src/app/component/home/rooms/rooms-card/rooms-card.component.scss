@@ -1,0 +1,96 @@
+.background-image {
+  position: relative;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+
+  .overlay-mf {
+    background-color: #111111;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    opacity: .5;
+  }
+
+  h1{
+    color: white;
+    z-index: 1;
+  }
+
+  p{
+    color: white;
+    z-index: 1;
+
+    span:hover{
+      color: #ccbaa4;
+      cursor: pointer;
+    }
+  }
+}
+
+.room-card-title{
+  padding: 40px 10px;
+
+  span{
+    color: dimgray;
+  }
+
+  h2{
+    font-family: 'Aboreto', cursive;
+    font-size: 30px;
+    text-align: center;
+  }
+}
+
+.room-card{
+  width: 100%;
+  min-height: 300px;
+
+  .right-div, .left-div{
+    flex: 1;
+    padding: 0 20px;
+    min-height: 200px;
+
+    .card-item{
+      min-height: 200px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      margin-bottom: 20px;
+      border-radius: 20px;
+      position: relative;
+
+      .fade{
+        background-color: #111111;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h2,span{
+          z-index: 2;
+          color: white;
+        }
+      }
+    }
+    .card-item > .fade{
+      opacity: 0;
+    }
+
+    .card-item > .fade:hover{
+      opacity: 0.5;
+      cursor: pointer;
+    }
+  }
+}
