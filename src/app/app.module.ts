@@ -23,6 +23,8 @@ import {BookingList1Component} from './component/hotel-booking/booking-list1/boo
 import {BookingList2Component} from './component/hotel-booking/booking-list2/booking-list2.component';
 import {MatTooltipModule} from "@angular/material/tooltip";
 import {MatCheckboxModule} from "@angular/material/checkbox";
+import { RoomsCardComponent } from './component/home/rooms/rooms-card/rooms-card.component';
+import { RoomsCarouselComponent } from './component/home/rooms/rooms-carousel/rooms-carousel.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import {MatCheckboxModule} from "@angular/material/checkbox";
     ExecutiveComponent,
     JuniorComponent,
     BookingList1Component,
-    BookingList2Component
+    BookingList2Component,
+    RoomsCardComponent,
+    RoomsCarouselComponent
   ],
     imports: [
         BrowserModule,

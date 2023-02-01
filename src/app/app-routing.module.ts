@@ -10,6 +10,8 @@ import {ExecutiveComponent} from "./component/home/rooms/executive/executive.com
 import {JuniorComponent} from "./component/home/rooms/junior/junior.component";
 import {BookingList1Component} from "./component/hotel-booking/booking-list1/booking-list1.component";
 import {BookingList2Component} from "./component/hotel-booking/booking-list2/booking-list2.component";
+import {RoomsCardComponent} from "./component/home/rooms/rooms-card/rooms-card.component";
+import {RoomsCarouselComponent} from "./component/home/rooms/rooms-carousel/rooms-carousel.component";
 
 const routes: Routes = [
   {path:"", redirectTo:"/home",pathMatch:"full"},
@@ -19,6 +21,8 @@ const routes: Routes = [
   {path:"family-double",component:FamilyDoubleComponent},
   {path:"executive",component:ExecutiveComponent},
   {path:"junior",component:JuniorComponent},
+  {path:"room-cards",component:RoomsCardComponent},
+  {path:"room-carousel",component:RoomsCarouselComponent},
   {path:"hotel-booking", component:HotelBookingComponent, children:[
       {path:"", redirectTo:"/hotel-booking/list-1", pathMatch:"full"},
       {path:"list-1", component:BookingList1Component},
