@@ -12,6 +12,7 @@ import {BookingList1Component} from "./component/hotel-booking/booking-list1/boo
 import {BookingList2Component} from "./component/hotel-booking/booking-list2/booking-list2.component";
 import {RoomsCardComponent} from "./component/home/rooms/rooms-card/rooms-card.component";
 import {RoomsCarouselComponent} from "./component/home/rooms/rooms-carousel/rooms-carousel.component";
+import {AboutComponent} from "./component/about/about.component";
 
 const routes: Routes = [
   {path:"", redirectTo:"/home",pathMatch:"full"},
@@ -28,6 +29,7 @@ const routes: Routes = [
       {path:"list-1", component:BookingList1Component},
       {path:"list-2", component:BookingList2Component},
     ]},
+  {path:"about", component:AboutComponent},
   {path:"**", component:NotFoundComponent}
 ];
 
