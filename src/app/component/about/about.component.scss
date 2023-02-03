@@ -99,3 +99,38 @@
     }
   }
 }
+
+.about-div-4{
+  width: 100%;
+  padding: 5% 0;
+
+  .about-div-4-cont{
+    border: 2px solid silver;
+    border-radius: 10px;
+    min-height: 200px;
+
+    .img-div{
+      width: 80px;
+      img{
+        width: 100%;
+      }
+    }
+
+    h2{
+      font-size: 40px;
+      font-family: 'Aboreto', cursive;
+      line-height: 50px;
+      font-weight: bold;
+    }
+
+    span{
+      font-size: 16px;
+    }
+  }
+  .about-div-4-cont:hover{
+    background-color: #ccbaa4;
+    h2,span{
+      color: white;
+    }
+  }
+}
