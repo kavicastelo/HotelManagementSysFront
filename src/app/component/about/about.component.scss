@@ -36,6 +36,7 @@
     flex: 1;
     min-height: 200px;
     padding: 8px;
+    margin: 5% 0;
 
     img{
       width: 100%;
@@ -53,6 +54,48 @@
       font-size: 25px;
       font-family: 'Aboreto', cursive;
       font-weight: bold;
+    }
+  }
+}
+
+.about-div-3{
+  width: 100%;
+  min-height: 200px;
+  margin: 2% 0;
+  background-color: #eee;
+
+  .about-div-3-cont{
+    min-width: 50%;
+    flex: 1;
+    min-height: 200px;
+
+    img{
+      width: 100%;
+    }
+
+    h2{
+      font-size: 35px;
+      font-family: 'Aboreto', cursive;
+      font-weight: bold;
+    }
+
+    p{
+      color: dimgray;
+      line-height: 20px;
+      font-size: 16px;
+      font-weight: bold;
+      font-family: 'Kanit', sans-serif;
+    }
+
+    button{
+      padding: 10px 25px;
+      border: none;
+      border-radius: 5px;
+      background-color: #ccbaa4;
+      color: white;
+    }
+    button:hover{
+      background-color: #dccab4;
     }
   }
 }
