@@ -26,6 +26,7 @@ import {MatCheckboxModule} from "@angular/material/checkbox";
 import { RoomsCardComponent } from './component/home/rooms/rooms-card/rooms-card.component';
 import { RoomsCarouselComponent } from './component/home/rooms/rooms-carousel/rooms-carousel.component';
 import { AboutComponent } from './component/about/about.component';
+import { DiningComponent } from './component/dining/dining.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { AboutComponent } from './component/about/about.component';
     BookingList2Component,
     RoomsCardComponent,
     RoomsCarouselComponent,
-    AboutComponent
+    AboutComponent,
+    DiningComponent
   ],
     imports: [
         BrowserModule,

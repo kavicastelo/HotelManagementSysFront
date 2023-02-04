@@ -1,0 +1,125 @@
+.main-banner{
+  width: 100%;
+  position: relative;
+
+  img{
+    width: 100%;
+  }
+
+  .banner-content{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    position: absolute;
+
+    span,h1{
+      color: white;
+      text-shadow: 1px 1px 2px black;
+    }
+
+    h1{
+      font-family: 'Aboreto', cursive;
+      font-size: 4vw;
+      line-height: 50px;
+    }
+  }
+}
+
+.container{
+  .first-div-content{
+    flex: 1;
+    min-height: 200px;
+    padding: 8px;
+    margin: 5% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    img{
+      width: 100%;
+      height: 100%;
+    }
+
+    p{
+      color: dimgray;
+      font-size: 16px;
+      font-weight: lighter;
+      margin-bottom: 10px;
+      line-height: 25px;
+    }
+
+    h1{
+      font-size: 18px;
+      font-family: 'Aboreto', cursive;
+    }
+  }
+}
+
+.dining-div-3{
+  width: 100%;
+  min-height: 200px;
+  margin: 2% 0;
+  background-color: #eee;
+
+  .dining-div-3-cont{
+    min-width: 50%;
+    flex: 1;
+    min-height: 200px;
+
+    img{
+      width: 100%;
+    }
+
+    h2{
+      font-size: 35px;
+      font-family: 'Aboreto', cursive;
+      font-weight: bold;
+    }
+
+    p{
+      color: dimgray;
+      line-height: 20px;
+      font-size: 16px;
+      font-weight: bold;
+      font-family: 'Kanit', sans-serif;
+    }
+
+    button{
+      padding: 10px 25px;
+      border: none;
+      border-radius: 5px;
+      background-color: #ccbaa4;
+      color: white;
+    }
+    button:hover{
+      background-color: #dccab4;
+    }
+  }
+}
+
+.dining-div-5{
+  width: 100%;
+  padding: 10%;
+
+  p{
+    font-family: 'Kanit', sans-serif;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  span{
+    margin: 1%;
+    color: #ccbaa4;
+  }
+  span:hover{
+    cursor: pointer;
+    color: #dccab4;
+  }
+}
