@@ -134,3 +134,23 @@
     }
   }
 }
+
+.about-div-5{
+  width: 100%;
+  padding: 10%;
+
+  p{
+    font-family: 'Kanit', sans-serif;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  span{
+    margin: 1%;
+    color: #ccbaa4;
+  }
+  span:hover{
+    cursor: pointer;
+    color: #dccab4;
+  }
+}
