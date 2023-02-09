@@ -15,6 +15,7 @@ import {RoomsCarouselComponent} from "./component/home/rooms/rooms-carousel/room
 import {AboutComponent} from "./component/about/about.component";
 import {DiningComponent} from "./component/dining/dining.component";
 import {SpaComponent} from "./component/spa/spa.component";
+import {TermsComponent} from "./component/terms/terms.component";
 
 const routes: Routes = [
   {path:"", redirectTo:"/home",pathMatch:"full"},
@@ -34,6 +35,7 @@ const routes: Routes = [
   {path:"about", component:AboutComponent},
   {path:"dining", component:DiningComponent},
   {path:"spa", component:SpaComponent},
+  {path:"terms", component:TermsComponent},
   {path:"**", component:NotFoundComponent}
 ];
 

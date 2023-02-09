@@ -28,6 +28,7 @@ import { RoomsCarouselComponent } from './component/home/rooms/rooms-carousel/ro
 import { AboutComponent } from './component/about/about.component';
 import { DiningComponent } from './component/dining/dining.component';
 import { SpaComponent } from './component/spa/spa.component';
+import { TermsComponent } from './component/terms/terms.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { SpaComponent } from './component/spa/spa.component';
     RoomsCarouselComponent,
     AboutComponent,
     DiningComponent,
-    SpaComponent
+    SpaComponent,
+    TermsComponent
   ],
     imports: [
         BrowserModule,
