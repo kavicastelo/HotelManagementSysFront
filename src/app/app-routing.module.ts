@@ -14,6 +14,7 @@ import {RoomsCardComponent} from "./component/home/rooms/rooms-card/rooms-card.c
 import {RoomsCarouselComponent} from "./component/home/rooms/rooms-carousel/rooms-carousel.component";
 import {AboutComponent} from "./component/about/about.component";
 import {DiningComponent} from "./component/dining/dining.component";
+import {SpaComponent} from "./component/spa/spa.component";
 
 const routes: Routes = [
   {path:"", redirectTo:"/home",pathMatch:"full"},
@@ -32,6 +33,7 @@ const routes: Routes = [
     ]},
   {path:"about", component:AboutComponent},
   {path:"dining", component:DiningComponent},
+  {path:"spa", component:SpaComponent},
   {path:"**", component:NotFoundComponent}
 ];
 
