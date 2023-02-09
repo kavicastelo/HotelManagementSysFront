@@ -1,1 +1,64 @@
-<p>contact works!</p>
+<div class="container">
+  <div class="title">
+    <span>WE'RE FRIENDLY</span>
+    <h2>Get in Touch</h2>
+  </div>
+
+  <form class="contact-form" [formGroup]="contactForm">
+
+    <div class="d-lg-flex d-md-flex" style="width: 100%">
+      <mat-form-field class="contact-form-full-width" appearance="outline" color="accent">
+        <mat-label>Name</mat-label>
+        <input matInput formControlName="name" placeholder="Ex. kavindu kokila">
+      </mat-form-field>
+
+      <mat-form-field class="contact-form-full-width" appearance="outline" color="accent">
+        <mat-label>Email</mat-label>
+        <input type="email" matInput formControlName="email" placeholder="Ex. pat@example.com">
+      </mat-form-field>
+    </div>
+
+    <div class="d-lg-flex d-md-flex" style="width: 100%">
+      <mat-form-field class="contact-form-full-width" appearance="outline" color="accent">
+        <mat-label>Phone</mat-label>
+        <input matInput formControlName="phone" placeholder="Ex. +94 4101233434">
+      </mat-form-field>
+
+      <mat-form-field class="contact-form-full-width" appearance="outline" color="accent">
+        <mat-label>Subject</mat-label>
+        <input matInput formControlName="subject" placeholder="Ex. Subject">
+      </mat-form-field>
+    </div>
+
+    <div class="d-flex" style="width: 100%">
+      <mat-form-field class="contact-form-full-width" appearance="outline" color="accent">
+        <mat-label>Message</mat-label>
+        <textarea matInput formControlName="message" placeholder="Ex. Message"></textarea>
+      </mat-form-field>
+    </div>
+
+    <button class="submit-btn" [disabled]="contactForm.invalid">Submit</button>
+  </form>
+
+</div>
+
+<div class="mapouter">
+  <div class="gmap_canvas">
+    <iframe width="100%" height="100%" id="gmap_canvas"
+            src="https://maps.google.com/maps?q=california&t=k&z=10&ie=UTF8&iwloc=&output=embed" frameborder="0"
+            scrolling="no" marginheight="0" marginwidth="0"></iframe>
+    <style>.mapouter {
+      position: relative;
+      text-align: right;
+      height: 100%;
+      width: 100%;
+    }</style>
+    <style>
+      .gmap_canvas {
+        overflow: hidden;
+        background: none !important;
+        height: 100%;
+        width: 100%;
+      }</style>
+  </div>
+</div>

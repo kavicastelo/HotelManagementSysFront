@@ -11,7 +11,7 @@ import {MatDatepickerModule} from "@angular/material/datepicker";
 import {MatInputModule} from "@angular/material/input";
 import {MatNativeDateModule} from "@angular/material/core";
 import {MatSelectModule} from "@angular/material/select";
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {HotelBookingComponent} from './component/hotel-booking/hotel-booking.component';
 import {PenthouseComponent} from './component/home/rooms/penthouse/penthouse.component';
 import {FamilyComponent} from './component/home/rooms/family/family.component';
@@ -52,20 +52,21 @@ import { ContactComponent } from './component/contact/contact.component';
     TermsComponent,
     ContactComponent
   ],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        BrowserAnimationsModule,
-        MatFormFieldModule,
-        MatDatepickerModule,
-        MatInputModule,
-        MatNativeDateModule,
-        MatSelectModule,
-        FormsModule,
-        MatIconModule,
-        MatTooltipModule,
-        MatCheckboxModule,
-    ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatFormFieldModule,
+    MatDatepickerModule,
+    MatInputModule,
+    MatNativeDateModule,
+    MatSelectModule,
+    FormsModule,
+    MatIconModule,
+    MatTooltipModule,
+    MatCheckboxModule,
+    ReactiveFormsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
