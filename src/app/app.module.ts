@@ -29,6 +29,7 @@ import { AboutComponent } from './component/about/about.component';
 import { DiningComponent } from './component/dining/dining.component';
 import { SpaComponent } from './component/spa/spa.component';
 import { TermsComponent } from './component/terms/terms.component';
+import { ContactComponent } from './component/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { TermsComponent } from './component/terms/terms.component';
     AboutComponent,
     DiningComponent,
     SpaComponent,
-    TermsComponent
+    TermsComponent,
+    ContactComponent
   ],
     imports: [
         BrowserModule,

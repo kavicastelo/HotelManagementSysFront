@@ -16,6 +16,7 @@ import {AboutComponent} from "./component/about/about.component";
 import {DiningComponent} from "./component/dining/dining.component";
 import {SpaComponent} from "./component/spa/spa.component";
 import {TermsComponent} from "./component/terms/terms.component";
+import {ContactComponent} from "./component/contact/contact.component";
 
 const routes: Routes = [
   {path:"", redirectTo:"/home",pathMatch:"full"},
@@ -36,6 +37,7 @@ const routes: Routes = [
   {path:"dining", component:DiningComponent},
   {path:"spa", component:SpaComponent},
   {path:"terms", component:TermsComponent},
+  {path:"contact", component:ContactComponent},
   {path:"**", component:NotFoundComponent}
 ];
 
