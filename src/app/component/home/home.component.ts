@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+declare var $:any;
 
 @Component({
   selector: 'app-home',
@@ -38,6 +39,5 @@ export class HomeComponent implements OnInit {
       console.log(this.activeAvailableBtn)
     }
   }
-
 
 }
