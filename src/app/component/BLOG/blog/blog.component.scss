@@ -1,0 +1,19 @@
+.button-set{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  button{
+    height: 30px;
+    width: 30px;
+    border: 1px solid silver;
+    color: dimgray;
+    background-color: white;
+    margin: 5% 3px;
+  }
+  button:hover{
+    color: white;
+    background-color: #ccbaa4;
+  }
+}

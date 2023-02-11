@@ -21,6 +21,12 @@ import {BlogComponent} from "./component/BLOG/blog/blog.component";
 import {BlogList1Component} from "./component/BLOG/blog/blog-list1/blog-list1.component";
 import {BlogList2Component} from "./component/BLOG/blog/blog-list2/blog-list2.component";
 import {BlogSingleComponent} from "./component/BLOG/blog-single/blog-single.component";
+import {CategoryComponent} from "./component/BLOG/blog/category/category.component";
+import {CatListComponent} from "./component/BLOG/blog/category/cat-list/cat-list.component";
+import {UncategoriesComponent} from "./component/BLOG/blog/category/uncategories/uncategories.component";
+import {EntertainmentComponent} from "./component/BLOG/blog/category/entertainment/entertainment.component";
+import {CultureComponent} from "./component/BLOG/blog/category/culture/culture.component";
+import {LifestyleComponent} from "./component/BLOG/blog/category/lifestyle/lifestyle.component";
 
 const routes: Routes = [
   {path:"", redirectTo:"/home",pathMatch:"full"},
@@ -48,6 +54,13 @@ const routes: Routes = [
       {path:"list-2", component:BlogList2Component},
     ]},
   {path:"blog-single", component:BlogSingleComponent},
+  {path:"category", component:CategoryComponent, children:[
+      {path:"", component: CatListComponent},
+      {path:"uncategorized", component:UncategoriesComponent},
+      {path:"Entertainment", component:EntertainmentComponent},
+      {path:"culture", component:CultureComponent},
+      {path:"lifestyle", component:LifestyleComponent},
+    ]},
   {path:"**", component:NotFoundComponent}
 ];
 
