@@ -30,6 +30,10 @@ import { DiningComponent } from './component/dining/dining.component';
 import { SpaComponent } from './component/spa/spa.component';
 import { TermsComponent } from './component/terms/terms.component';
 import { ContactComponent } from './component/contact/contact.component';
+import { BlogComponent } from './component/BLOG/blog/blog.component';
+import { BlogSingleComponent } from './component/BLOG/blog-single/blog-single.component';
+import { BlogList1Component } from './component/BLOG/blog/blog-list1/blog-list1.component';
+import { BlogList2Component } from './component/BLOG/blog/blog-list2/blog-list2.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +54,11 @@ import { ContactComponent } from './component/contact/contact.component';
     DiningComponent,
     SpaComponent,
     TermsComponent,
-    ContactComponent
+    ContactComponent,
+    BlogComponent,
+    BlogSingleComponent,
+    BlogList1Component,
+    BlogList2Component
   ],
   imports: [
     BrowserModule,

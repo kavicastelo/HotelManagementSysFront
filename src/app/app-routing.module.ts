@@ -17,6 +17,10 @@ import {DiningComponent} from "./component/dining/dining.component";
 import {SpaComponent} from "./component/spa/spa.component";
 import {TermsComponent} from "./component/terms/terms.component";
 import {ContactComponent} from "./component/contact/contact.component";
+import {BlogComponent} from "./component/BLOG/blog/blog.component";
+import {BlogList1Component} from "./component/BLOG/blog/blog-list1/blog-list1.component";
+import {BlogList2Component} from "./component/BLOG/blog/blog-list2/blog-list2.component";
+import {BlogSingleComponent} from "./component/BLOG/blog-single/blog-single.component";
 
 const routes: Routes = [
   {path:"", redirectTo:"/home",pathMatch:"full"},
@@ -38,6 +42,12 @@ const routes: Routes = [
   {path:"spa", component:SpaComponent},
   {path:"terms", component:TermsComponent},
   {path:"contact", component:ContactComponent},
+  {path:"blog", component:BlogComponent,children:[
+      {path:"",redirectTo: "/blog/list-1", pathMatch: "full"},
+      {path:"list-1", component:BlogList1Component},
+      {path:"list-2", component:BlogList2Component},
+    ]},
+  {path:"blog-single", component:BlogSingleComponent},
   {path:"**", component:NotFoundComponent}
 ];
 
