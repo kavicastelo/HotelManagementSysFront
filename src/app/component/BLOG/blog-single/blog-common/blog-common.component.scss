@@ -1,6 +1,6 @@
 .div-1{
   width: 100%;
-  min-height: 300px;
+  min-height: 100px;
   border: 1px solid silver;
   border-radius: 5px;
   margin-bottom: 20px;
@@ -16,6 +16,18 @@
     h1{
       margin: 0;
       font-size: 16px;
+    }
+
+    h2{
+      margin: 0;
+      font-size: 14px;
+      font-family: 'Kanit', sans-serif;
+      font-weight: bold;
+      color: dimgray;
+    }
+    h2:hover{
+      cursor: pointer;
+      color: silver;
     }
 
     .thumb{

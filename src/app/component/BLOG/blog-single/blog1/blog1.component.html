@@ -1,8 +1,25 @@
-<div class="row">
-  <div class="col-6">
-    <p>blog1 works!</p>
-  </div>
-  <div class="col-6">
-    <router-outlet></router-outlet>
+<div class="container">
+  <div class="row" style="margin: 0">
+    <div class="col-12 col-sm-12 col-md-7 col-lg-8">
+      <div class="blog-det">
+        <h1>Hello world!</h1>
+        <div class="author">
+          <div class="pro-pic">
+            <img src="./assets/img/feedback-profile.jpg" alt="profile">
+          </div>
+          <h3>Bob Willams&nbsp;</h3>&boxv;<h4>&nbsp;May 6, 2018</h4>
+        </div>
+        <div class="blog-content">
+          <p>Welcome to Hotel Luxe Sites. This is your first post. Edit or delete it, then start blogging!</p>
+        </div>
+        <div class="comment-section">
+          <h3><span>1</span>&nbsp;Comment</h3>
+          <hr>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-5 col-lg-4">
+      <router-outlet></router-outlet>
+    </div>
   </div>
 </div>
