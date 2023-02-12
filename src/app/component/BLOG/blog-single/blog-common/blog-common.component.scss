@@ -1,0 +1,56 @@
+.div-1{
+  width: 100%;
+  min-height: 300px;
+  border: 1px solid silver;
+  border-radius: 5px;
+  margin-bottom: 20px;
+
+  hr{
+    margin: 0;
+  }
+
+  .div-1-cont{
+    width: 100%;
+    padding: 10px 15px;
+
+    h1{
+      margin: 0;
+      font-size: 16px;
+    }
+
+    .thumb{
+      width: 60px;
+      height: 60px;
+      overflow: hidden;
+
+      img{
+        height: 100%;
+      }
+      img:hover{
+        cursor: pointer;
+      }
+    }
+
+    .des{
+      margin-left: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      h2{
+        margin: 0;
+        font-size: 14px;
+      }
+      h2:hover{
+        cursor: pointer;
+        color: silver;
+      }
+
+      h3{
+        margin: 0;
+        font-size: 12px;
+        color: dimgray;
+      }
+    }
+  }
+}

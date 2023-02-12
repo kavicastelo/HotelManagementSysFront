@@ -27,6 +27,15 @@ import {UncategoriesComponent} from "./component/BLOG/blog/category/uncategories
 import {EntertainmentComponent} from "./component/BLOG/blog/category/entertainment/entertainment.component";
 import {CultureComponent} from "./component/BLOG/blog/category/culture/culture.component";
 import {LifestyleComponent} from "./component/BLOG/blog/category/lifestyle/lifestyle.component";
+import {Blog1Component} from "./component/BLOG/blog-single/blog1/blog1.component";
+import {Blog2Component} from "./component/BLOG/blog-single/blog2/blog2.component";
+import {Blog3Component} from "./component/BLOG/blog-single/blog3/blog3.component";
+import {Blog4Component} from "./component/BLOG/blog-single/blog4/blog4.component";
+import {Blog5Component} from "./component/BLOG/blog-single/blog5/blog5.component";
+import {Blog6Component} from "./component/BLOG/blog-single/blog6/blog6.component";
+import {Blog7Component} from "./component/BLOG/blog-single/blog7/blog7.component";
+import {Blog8Component} from "./component/BLOG/blog-single/blog8/blog8.component";
+import {BlogCommonComponent} from "./component/BLOG/blog-single/blog-common/blog-common.component";
 
 const routes: Routes = [
   {path:"", redirectTo:"/home",pathMatch:"full"},
@@ -53,13 +62,39 @@ const routes: Routes = [
       {path:"list-1", component:BlogList1Component},
       {path:"list-2", component:BlogList2Component},
     ]},
-  {path:"blog-single", component:BlogSingleComponent},
   {path:"category", component:CategoryComponent, children:[
       {path:"", component: CatListComponent},
       {path:"uncategorized", component:UncategoriesComponent},
       {path:"Entertainment", component:EntertainmentComponent},
       {path:"culture", component:CultureComponent},
       {path:"lifestyle", component:LifestyleComponent},
+    ]},
+  {path:"blog-single", component:BlogSingleComponent, children:[
+      {path: "", redirectTo: "/blog-single/blog-1", pathMatch: "full"},
+      {path: "blog-1", component: Blog1Component, children:[
+          {path:"", component:BlogCommonComponent},
+        ]},
+      {path: "blog-2", component: Blog2Component, children:[
+          {path:"", component:BlogCommonComponent},
+        ]},
+      {path: "blog-3", component: Blog3Component, children:[
+          {path:"", component:BlogCommonComponent},
+        ]},
+      {path: "blog-4", component: Blog4Component, children:[
+          {path:"", component:BlogCommonComponent},
+        ]},
+      {path: "blog-5", component: Blog5Component, children:[
+          {path:"", component:BlogCommonComponent},
+        ]},
+      {path: "blog-6", component: Blog6Component, children:[
+          {path:"", component:BlogCommonComponent},
+        ]},
+      {path: "blog-7", component: Blog7Component, children:[
+          {path:"", component:BlogCommonComponent},
+        ]},
+      {path: "blog-8", component: Blog8Component, children:[
+          {path:"", component:BlogCommonComponent},
+        ]},
     ]},
   {path:"**", component:NotFoundComponent}
 ];

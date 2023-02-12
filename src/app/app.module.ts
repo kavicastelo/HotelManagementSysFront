@@ -40,6 +40,15 @@ import { EntertainmentComponent } from './component/BLOG/blog/category/entertain
 import { LifestyleComponent } from './component/BLOG/blog/category/lifestyle/lifestyle.component';
 import { CultureComponent } from './component/BLOG/blog/category/culture/culture.component';
 import { CatListComponent } from './component/BLOG/blog/category/cat-list/cat-list.component';
+import { Blog1Component } from './component/BLOG/blog-single/blog1/blog1.component';
+import { Blog2Component } from './component/BLOG/blog-single/blog2/blog2.component';
+import { Blog3Component } from './component/BLOG/blog-single/blog3/blog3.component';
+import { Blog4Component } from './component/BLOG/blog-single/blog4/blog4.component';
+import { Blog5Component } from './component/BLOG/blog-single/blog5/blog5.component';
+import { Blog6Component } from './component/BLOG/blog-single/blog6/blog6.component';
+import { Blog7Component } from './component/BLOG/blog-single/blog7/blog7.component';
+import { Blog8Component } from './component/BLOG/blog-single/blog8/blog8.component';
+import { BlogCommonComponent } from './component/BLOG/blog-single/blog-common/blog-common.component';
 
 @NgModule({
   declarations: [
@@ -70,7 +79,16 @@ import { CatListComponent } from './component/BLOG/blog/category/cat-list/cat-li
     EntertainmentComponent,
     LifestyleComponent,
     CultureComponent,
-    CatListComponent
+    CatListComponent,
+    Blog1Component,
+    Blog2Component,
+    Blog3Component,
+    Blog4Component,
+    Blog5Component,
+    Blog6Component,
+    Blog7Component,
+    Blog8Component,
+    BlogCommonComponent
   ],
   imports: [
     BrowserModule,
