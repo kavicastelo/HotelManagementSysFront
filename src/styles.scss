@@ -5,3 +5,153 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+//blog common
+.blog-det{
+  padding: 0 5px;
+
+  h1{
+    font-size: 32px;
+    font-family: 'Aboreto', cursive;
+  }
+
+  .author{
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+
+    .pro-pic{
+      width: 3.5vw;
+      height: 3.5vw;
+      min-width: 30px;
+      min-height: 30px;
+      overflow: hidden;
+      border-radius: 100%;
+      margin-right: 5px;
+
+      img{
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+      }
+    }
+
+    h3,h4{
+      margin: 0;
+    }
+  }
+
+  .blog-content{
+    padding: 30px 20px;
+    border: 1px solid silver;
+    border-radius: 5px;
+    margin-bottom: 30px;
+
+    p{
+      font-size: 18px;
+      font-family: 'Kanit', sans-serif;
+      color: dimgray;
+      margin: 0;
+    }
+  }
+
+  .comment-section{
+    width: 100%;
+    border: 1px solid silver;
+    border-radius: 5px;
+    min-height: 100px;
+    margin-bottom: 30px;
+
+    hr{
+      margin: 0;
+    }
+
+    h3{
+      margin: 8px 15px;
+    }
+
+    table{
+      width: 100%;
+      tbody{
+        width: 100%;
+
+        .commenter-pro-pic{
+          padding: 5px;
+
+          .pro-pic-wrapper{
+            width: 40px;
+            height: 40px;
+            overflow: hidden;
+            border-radius: 100%;
+
+            img{
+              width: 100%;
+              height: 100%;
+              border-radius: 100%;
+            }
+          }
+        }
+
+        .commenter{
+          width: 80%;
+          font-size: 15px;
+          color: dimgray;
+          padding: 10px 0;
+        }
+        .commenter:hover{
+          cursor: pointer;
+          color: silver;
+        }
+
+        .comment-date{
+          width: 20%;
+          font-weight: lighter;
+          color: dimgray;
+          font-size: 12px;
+        }
+
+        .comment{
+          width: 100%;
+          padding-bottom: 20px;
+          font-size: 14px;
+          color: dimgray;
+          font-weight: lighter;
+        }
+      }
+    }
+  }
+
+  .comment-form{
+    width: 100%;
+    border: 1px solid silver;
+    border-radius: 5px;
+    min-height: 100px;
+    margin-bottom: 30px;
+
+    hr{
+      margin: 0;
+    }
+
+    h3{
+      margin: 8px 15px;
+    }
+
+    .contact-form{
+      padding: 10px;
+
+      .contact-form-full-width{
+        width: 100%;
+      }
+
+      .submit-btn{
+        padding: 10px 20px;
+        border: none;
+        border-radius: 20px;
+        background-color: #ccbaa4;
+        color: white;
+      }
+    }
+  }
+}
+//blog common

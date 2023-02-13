@@ -1,7 +1,65 @@
 <div class="container">
   <div class="row" style="margin: 0">
     <div class="col-12 col-sm-12 col-md-7 col-lg-8">
-      <!--      ode here-->
+      <div class="blog-det">
+
+        <div class="blog-content">
+          <p>Welcome to Hotel Luxe Sites. This is your first post. Edit or delete it, then start blogging!</p>
+        </div>
+
+        <div class="comment-section">
+          <h3><span>1</span>&nbsp;Comment</h3>
+          <hr>
+          <table>
+            <tbody>
+            <tr>
+              <td rowspan="2" class="commenter-pro-pic">
+                <div class="pro-pic-wrapper">
+                  <img src="./assets/img/feedback-profile.jpg" alt="pro">
+                </div>
+              </td>
+              <td class="commenter">A WordPress Commenter</td>
+              <td class="comment-date">February 10, 2018</td>
+            </tr>
+            <tr>
+              <td colspan="2" class="comment">Hi, this is a comment.
+                To get started with moderating, editing, and deleting comments, please visit the Comments screen in the dashboard.
+                Commenter avatars come from Gravatar.</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="comment-form">
+          <h3>Leave a Comment</h3>
+          <hr>
+
+          <form class="contact-form" [formGroup]="contactForm">
+
+            <div class="d-lg-flex" style="width: 100%">
+              <mat-form-field class="contact-form-full-width" appearance="outline" color="accent">
+                <mat-label>Name</mat-label>
+                <input matInput formControlName="name" placeholder="Ex. kavindu kokila">
+              </mat-form-field>
+
+              <mat-form-field class="contact-form-full-width" appearance="outline" color="accent">
+                <mat-label>Email</mat-label>
+                <input type="email" matInput formControlName="email" placeholder="Ex. pat@example.com">
+              </mat-form-field>
+            </div>
+
+            <div class="d-flex" style="width: 100%">
+              <mat-form-field class="contact-form-full-width" appearance="outline" color="accent">
+                <mat-label>Comment Here</mat-label>
+                <textarea matInput formControlName="message" placeholder="Ex. Comment"></textarea>
+              </mat-form-field>
+            </div>
+
+            <button class="submit-btn" [disabled]="contactForm.invalid">Comment</button>
+          </form>
+
+        </div>
+      </div>
     </div>
     <div class="col-12 col-sm-12 col-md-5 col-lg-4">
       <router-outlet></router-outlet>
