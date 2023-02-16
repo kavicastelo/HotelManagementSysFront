@@ -1,14 +1,14 @@
 <div class="container">
-  <div class="item d-md-flex d-lg-flex align-items-center justify-content-center">
+  <div class="item d-md-flex d-lg-flex align-items-center justify-content-center" >
     <div class="item-left d-md-flex d-lg-flex">
       <div class="item-image-div">
         <img src="./assets/img/rooms/room%201.jpg" alt="room 1">
       </div>
       <div class="item-context">
-        <h2 [(ngModel)]="selectRoom" ngDefaultControl >Contemporary Suites</h2>
+        <h2 id="Contemporary">Contemporary Suites</h2>
         <div class="d-flex align-items-center">
-          <mat-icon>groups</mat-icon><span>Capability <span [(ngModel)]="selectRoomCapability" ngDefaultControl >2</span></span>&nbsp;&nbsp;
-          <mat-icon>person</mat-icon><span>Children <span [(ngModel)]="selectRoomChildren" ngDefaultControl >0</span></span>
+          <mat-icon>groups</mat-icon><span>Capability <span id="Contemporary-capacity">2</span></span>&nbsp;&nbsp;
+          <mat-icon>person</mat-icon><span>Children <span id="Contemporary-children">0</span></span>
         </div>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consectetur, doloremque eos esse expedita
           labore nisi officiis sequi suscipit veritatis...</p>
@@ -29,253 +29,253 @@
 
     <div class="item-right d-flex flex-column align-items-center justify-content-center">
       <span>price</span>
-      <h2 [(ngModel)]="selectRoomPrice" ngDefaultControl >$94.00</h2>
-      <button (click)="selectedRoom()">SELECT ROOM</button>
+      <h2 id="Contemporary-price">$94.00</h2>
+      <button (click)="ContemporaryClick()">SELECT ROOM</button>
     </div>
   </div>
 
-<!--  <div class="item d-md-flex d-lg-flex align-items-center justify-content-center">-->
-<!--    <div class="item-left d-md-flex d-lg-flex">-->
-<!--      <div class="item-image-div">-->
-<!--        <img src="./assets/img/rooms/room%202.jpg" alt="room 2">-->
-<!--      </div>-->
-<!--      <div class="item-context">-->
-<!--        <h2 [(ngModel)]="selectRoom" ngDefaultControl >Executive Suites</h2>-->
-<!--        <div class="d-flex align-items-center">-->
-<!--          <mat-icon>groups</mat-icon><span>Capability <span [(ngModel)]="selectRoomCapability" ngDefaultControl >2</span></span>&nbsp;&nbsp;-->
-<!--          <mat-icon>person</mat-icon><span>Children <span [(ngModel)]="selectRoomChildren" ngDefaultControl >2</span></span>-->
-<!--        </div>-->
-<!--        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consectetur, doloremque eos esse expedita-->
-<!--          labore nisi officiis sequi suscipit veritatis...</p>-->
-<!--        <div class="d-flex justify-content-between">-->
-<!--          <mat-icon matTooltip="Wifi">wifi</mat-icon>-->
-<!--          <mat-icon matTooltip="Television">tv</mat-icon>-->
-<!--          <mat-icon matTooltip="Local Newspaper">newspaper</mat-icon>-->
-<!--          <mat-icon matTooltip="Bathtub">bathtub</mat-icon>-->
-<!--          <mat-icon matTooltip="Room Breakfast">restaurant</mat-icon>-->
-<!--          <mat-icon matTooltip="Spa">hotel</mat-icon>-->
-<!--          <mat-icon matTooltip="Wakeup Call">call</mat-icon>-->
-<!--          <mat-icon matTooltip="Mini Bar">liquor</mat-icon>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
+  <div class="item d-md-flex d-lg-flex align-items-center justify-content-center">
+    <div class="item-left d-md-flex d-lg-flex">
+      <div class="item-image-div">
+        <img src="./assets/img/rooms/room%202.jpg" alt="room 2">
+      </div>
+      <div class="item-context">
+        <h2 id="Executive">Executive Suites</h2>
+        <div class="d-flex align-items-center">
+          <mat-icon>groups</mat-icon><span>Capability <span id="Executive-capacity">2</span></span>&nbsp;&nbsp;
+          <mat-icon>person</mat-icon><span>Children <span id="Executive-children">2</span></span>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consectetur, doloremque eos esse expedita
+          labore nisi officiis sequi suscipit veritatis...</p>
+        <div class="d-flex justify-content-between">
+          <mat-icon matTooltip="Wifi">wifi</mat-icon>
+          <mat-icon matTooltip="Television">tv</mat-icon>
+          <mat-icon matTooltip="Local Newspaper">newspaper</mat-icon>
+          <mat-icon matTooltip="Bathtub">bathtub</mat-icon>
+          <mat-icon matTooltip="Room Breakfast">restaurant</mat-icon>
+          <mat-icon matTooltip="Spa">hotel</mat-icon>
+          <mat-icon matTooltip="Wakeup Call">call</mat-icon>
+          <mat-icon matTooltip="Mini Bar">liquor</mat-icon>
+        </div>
+      </div>
+    </div>
 
-<!--    <div style="width: 1px; height: 250px; border: 1px solid silver" class="d-none d-md-block"></div>-->
+    <div style="width: 1px; height: 250px; border: 1px solid silver" class="d-none d-md-block"></div>
 
-<!--    <div class="item-right d-flex flex-column align-items-center justify-content-center">-->
-<!--      <span>price</span>-->
-<!--      <h2 [(ngModel)]="selectRoomPrice" ngDefaultControl >$94.00</h2>-->
-<!--      <button>SELECT ROOM</button>-->
-<!--    </div>-->
-<!--  </div>-->
+    <div class="item-right d-flex flex-column align-items-center justify-content-center">
+      <span>price</span>
+      <h2 id="Executive-price">$94.00</h2>
+      <button (click)="ExecutiveClick()">SELECT ROOM</button>
+    </div>
+  </div>
 
-<!--  <div class="item d-md-flex d-lg-flex align-items-center justify-content-center">-->
-<!--    <div class="item-left d-md-flex d-lg-flex">-->
-<!--      <div class="item-image-div">-->
-<!--        <img src="./assets/img/rooms/room%203.jpg" alt="room 3">-->
-<!--      </div>-->
-<!--      <div class="item-context">-->
-<!--        <h2 [(ngModel)]="selectRoom" ngDefaultControl >Classic Single Bed</h2>-->
-<!--        <div class="d-flex align-items-center">-->
-<!--          <mat-icon>groups</mat-icon><span>Capability <span [(ngModel)]="selectRoomCapability" ngDefaultControl >2</span></span>&nbsp;&nbsp;-->
-<!--          <mat-icon>person</mat-icon><span>Children <span [(ngModel)]="selectRoomChildren" ngDefaultControl >3</span></span>-->
-<!--        </div>-->
-<!--        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consectetur, doloremque eos esse expedita-->
-<!--          labore nisi officiis sequi suscipit veritatis...</p>-->
-<!--        <div class="d-flex justify-content-between">-->
-<!--          <mat-icon matTooltip="Wifi">wifi</mat-icon>-->
-<!--          <mat-icon matTooltip="Television">tv</mat-icon>-->
-<!--          <mat-icon matTooltip="Local Newspaper">newspaper</mat-icon>-->
-<!--          <mat-icon matTooltip="Bathtub">bathtub</mat-icon>-->
-<!--          <mat-icon matTooltip="Room Breakfast">restaurant</mat-icon>-->
-<!--          <mat-icon matTooltip="Spa">hotel</mat-icon>-->
-<!--          <mat-icon matTooltip="Wakeup Call">call</mat-icon>-->
-<!--          <mat-icon matTooltip="Mini Bar">liquor</mat-icon>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
+  <div class="item d-md-flex d-lg-flex align-items-center justify-content-center">
+    <div class="item-left d-md-flex d-lg-flex">
+      <div class="item-image-div">
+        <img src="./assets/img/rooms/room%203.jpg" alt="room 3">
+      </div>
+      <div class="item-context">
+        <h2 id="Classic">Classic Single Bed</h2>
+        <div class="d-flex align-items-center">
+          <mat-icon>groups</mat-icon><span>Capability <span id="Classic-capacity">2</span></span>&nbsp;&nbsp;
+          <mat-icon>person</mat-icon><span>Children <span id="Classic-children">3</span></span>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consectetur, doloremque eos esse expedita
+          labore nisi officiis sequi suscipit veritatis...</p>
+        <div class="d-flex justify-content-between">
+          <mat-icon matTooltip="Wifi">wifi</mat-icon>
+          <mat-icon matTooltip="Television">tv</mat-icon>
+          <mat-icon matTooltip="Local Newspaper">newspaper</mat-icon>
+          <mat-icon matTooltip="Bathtub">bathtub</mat-icon>
+          <mat-icon matTooltip="Room Breakfast">restaurant</mat-icon>
+          <mat-icon matTooltip="Spa">hotel</mat-icon>
+          <mat-icon matTooltip="Wakeup Call">call</mat-icon>
+          <mat-icon matTooltip="Mini Bar">liquor</mat-icon>
+        </div>
+      </div>
+    </div>
 
-<!--    <div style="width: 1px; height: 250px; border: 1px solid silver" class="d-none d-md-block"></div>-->
+    <div style="width: 1px; height: 250px; border: 1px solid silver" class="d-none d-md-block"></div>
 
-<!--    <div class="item-right d-flex flex-column align-items-center justify-content-center">-->
-<!--      <span>price</span>-->
-<!--      <h2 [(ngModel)]="selectRoomPrice" ngDefaultControl >$94.00</h2>-->
-<!--      <button>SELECT ROOM</button>-->
-<!--    </div>-->
-<!--  </div>-->
+    <div class="item-right d-flex flex-column align-items-center justify-content-center">
+      <span>price</span>
+      <h2 id="Classic-price">$94.00</h2>
+      <button (click)="ClassicClick()">SELECT ROOM</button>
+    </div>
+  </div>
 
-<!--  <div class="item d-md-flex d-lg-flex align-items-center justify-content-center">-->
-<!--    <div class="item-left d-md-flex d-lg-flex">-->
-<!--      <div class="item-image-div">-->
-<!--        <img src="./assets/img/rooms/room%204.jpg" alt="room 4">-->
-<!--      </div>-->
-<!--      <div class="item-context">-->
-<!--        <h2 [(ngModel)]="selectRoom" ngDefaultControl >Junior Suite</h2>-->
-<!--        <div class="d-flex align-items-center">-->
-<!--          <mat-icon>groups</mat-icon><span>Capability <span [(ngModel)]="selectRoomCapability" ngDefaultControl >3</span></span>&nbsp;&nbsp;-->
-<!--          <mat-icon>person</mat-icon><span>Children <span [(ngModel)]="selectRoomChildren" ngDefaultControl >2</span></span>-->
-<!--        </div>-->
-<!--        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consectetur, doloremque eos esse expedita-->
-<!--          labore nisi officiis sequi suscipit veritatis...</p>-->
-<!--        <div class="d-flex justify-content-between">-->
-<!--          <mat-icon matTooltip="Wifi">wifi</mat-icon>-->
-<!--          <mat-icon matTooltip="Television">tv</mat-icon>-->
-<!--          <mat-icon matTooltip="Local Newspaper">newspaper</mat-icon>-->
-<!--          <mat-icon matTooltip="Bathtub">bathtub</mat-icon>-->
-<!--          <mat-icon matTooltip="Room Breakfast">restaurant</mat-icon>-->
-<!--          <mat-icon matTooltip="Spa">hotel</mat-icon>-->
-<!--          <mat-icon matTooltip="Wakeup Call">call</mat-icon>-->
-<!--          <mat-icon matTooltip="Mini Bar">liquor</mat-icon>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
+  <div class="item d-md-flex d-lg-flex align-items-center justify-content-center">
+    <div class="item-left d-md-flex d-lg-flex">
+      <div class="item-image-div">
+        <img src="./assets/img/rooms/room%204.jpg" alt="room 4">
+      </div>
+      <div class="item-context">
+        <h2 id="Junior">Junior Suite</h2>
+        <div class="d-flex align-items-center">
+          <mat-icon>groups</mat-icon><span>Capability <span id="Junior-capacity">3</span></span>&nbsp;&nbsp;
+          <mat-icon>person</mat-icon><span>Children <span id="Junior-children">2</span></span>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consectetur, doloremque eos esse expedita
+          labore nisi officiis sequi suscipit veritatis...</p>
+        <div class="d-flex justify-content-between">
+          <mat-icon matTooltip="Wifi">wifi</mat-icon>
+          <mat-icon matTooltip="Television">tv</mat-icon>
+          <mat-icon matTooltip="Local Newspaper">newspaper</mat-icon>
+          <mat-icon matTooltip="Bathtub">bathtub</mat-icon>
+          <mat-icon matTooltip="Room Breakfast">restaurant</mat-icon>
+          <mat-icon matTooltip="Spa">hotel</mat-icon>
+          <mat-icon matTooltip="Wakeup Call">call</mat-icon>
+          <mat-icon matTooltip="Mini Bar">liquor</mat-icon>
+        </div>
+      </div>
+    </div>
 
-<!--    <div style="width: 1px; height: 250px; border: 1px solid silver" class="d-none d-md-block"></div>-->
+    <div style="width: 1px; height: 250px; border: 1px solid silver" class="d-none d-md-block"></div>
 
-<!--    <div class="item-right d-flex flex-column align-items-center justify-content-center">-->
-<!--      <span>price</span>-->
-<!--      <h2 [(ngModel)]="selectRoomPrice" ngDefaultControl >$94.00</h2>-->
-<!--      <button>SELECT ROOM</button>-->
-<!--    </div>-->
-<!--  </div>-->
+    <div class="item-right d-flex flex-column align-items-center justify-content-center">
+      <span>price</span>
+      <h2 id="Junior-price">$94.00</h2>
+      <button (click)="JuniorClick()">SELECT ROOM</button>
+    </div>
+  </div>
 
-<!--  <div class="item d-md-flex d-lg-flex align-items-center justify-content-center">-->
-<!--    <div class="item-left d-md-flex d-lg-flex">-->
-<!--      <div class="item-image-div">-->
-<!--        <img src="./assets/img/rooms/room%205.jpg" alt="room 5">-->
-<!--      </div>-->
-<!--      <div class="item-context">-->
-<!--        <h2 [(ngModel)]="selectRoom" ngDefaultControl >Standard Room</h2>-->
-<!--        <div class="d-flex align-items-center">-->
-<!--          <mat-icon>groups</mat-icon><span>Capability <span [(ngModel)]="selectRoomCapability" ngDefaultControl >4</span></span>&nbsp;&nbsp;-->
-<!--          <mat-icon>person</mat-icon><span>Children <span [(ngModel)]="selectRoomChildren" ngDefaultControl >2</span></span>-->
-<!--        </div>-->
-<!--        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consectetur, doloremque eos esse expedita-->
-<!--          labore nisi officiis sequi suscipit veritatis...</p>-->
-<!--        <div class="d-flex justify-content-between">-->
-<!--          <mat-icon matTooltip="Wifi">wifi</mat-icon>-->
-<!--          <mat-icon matTooltip="Television">tv</mat-icon>-->
-<!--          <mat-icon matTooltip="Local Newspaper">newspaper</mat-icon>-->
-<!--          <mat-icon matTooltip="Bathtub">bathtub</mat-icon>-->
-<!--          <mat-icon matTooltip="Room Breakfast">restaurant</mat-icon>-->
-<!--          <mat-icon matTooltip="Spa">hotel</mat-icon>-->
-<!--          <mat-icon matTooltip="Wakeup Call">call</mat-icon>-->
-<!--          <mat-icon matTooltip="Mini Bar">liquor</mat-icon>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
+  <div class="item d-md-flex d-lg-flex align-items-center justify-content-center">
+    <div class="item-left d-md-flex d-lg-flex">
+      <div class="item-image-div">
+        <img src="./assets/img/rooms/room%205.jpg" alt="room 5">
+      </div>
+      <div class="item-context">
+        <h2 id="Standard">Standard Room</h2>
+        <div class="d-flex align-items-center">
+          <mat-icon>groups</mat-icon><span>Capability <span id="Standard-capacity">4</span></span>&nbsp;&nbsp;
+          <mat-icon>person</mat-icon><span>Children <span id="Standard-children">2</span></span>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consectetur, doloremque eos esse expedita
+          labore nisi officiis sequi suscipit veritatis...</p>
+        <div class="d-flex justify-content-between">
+          <mat-icon matTooltip="Wifi">wifi</mat-icon>
+          <mat-icon matTooltip="Television">tv</mat-icon>
+          <mat-icon matTooltip="Local Newspaper">newspaper</mat-icon>
+          <mat-icon matTooltip="Bathtub">bathtub</mat-icon>
+          <mat-icon matTooltip="Room Breakfast">restaurant</mat-icon>
+          <mat-icon matTooltip="Spa">hotel</mat-icon>
+          <mat-icon matTooltip="Wakeup Call">call</mat-icon>
+          <mat-icon matTooltip="Mini Bar">liquor</mat-icon>
+        </div>
+      </div>
+    </div>
 
-<!--    <div style="width: 1px; height: 250px; border: 1px solid silver" class="d-none d-md-block"></div>-->
+    <div style="width: 1px; height: 250px; border: 1px solid silver" class="d-none d-md-block"></div>
 
-<!--    <div class="item-right d-flex flex-column align-items-center justify-content-center">-->
-<!--      <span>price</span>-->
-<!--      <h2 [(ngModel)]="selectRoomPrice" ngDefaultControl >$94.00</h2>-->
-<!--      <button>SELECT ROOM</button>-->
-<!--    </div>-->
-<!--  </div>-->
+    <div class="item-right d-flex flex-column align-items-center justify-content-center">
+      <span>price</span>
+      <h2 id="Standard-price">$94.00</h2>
+      <button (click)="StandardClick()">SELECT ROOM</button>
+    </div>
+  </div>
 
-<!--  <div class="item d-md-flex d-lg-flex align-items-center justify-content-center">-->
-<!--    <div class="item-left d-md-flex d-lg-flex">-->
-<!--      <div class="item-image-div">-->
-<!--        <img src="./assets/img/rooms/room%206.jpg" alt="room 6">-->
-<!--      </div>-->
-<!--      <div class="item-context">-->
-<!--        <h2 [(ngModel)]="selectRoom" ngDefaultControl >Executive Room</h2>-->
-<!--        <div class="d-flex align-items-center">-->
-<!--          <mat-icon>groups</mat-icon><span>Capability <span [(ngModel)]="selectRoomCapability" ngDefaultControl >5</span></span>&nbsp;&nbsp;-->
-<!--          <mat-icon>person</mat-icon><span>Children <span [(ngModel)]="selectRoomChildren" ngDefaultControl >2</span></span>-->
-<!--        </div>-->
-<!--        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consectetur, doloremque eos esse expedita-->
-<!--          labore nisi officiis sequi suscipit veritatis...</p>-->
-<!--        <div class="d-flex justify-content-between">-->
-<!--          <mat-icon matTooltip="Wifi">wifi</mat-icon>-->
-<!--          <mat-icon matTooltip="Television">tv</mat-icon>-->
-<!--          <mat-icon matTooltip="Local Newspaper">newspaper</mat-icon>-->
-<!--          <mat-icon matTooltip="Bathtub">bathtub</mat-icon>-->
-<!--          <mat-icon matTooltip="Room Breakfast">restaurant</mat-icon>-->
-<!--          <mat-icon matTooltip="Spa">hotel</mat-icon>-->
-<!--          <mat-icon matTooltip="Wakeup Call">call</mat-icon>-->
-<!--          <mat-icon matTooltip="Mini Bar">liquor</mat-icon>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
+  <div class="item d-md-flex d-lg-flex align-items-center justify-content-center">
+    <div class="item-left d-md-flex d-lg-flex">
+      <div class="item-image-div">
+        <img src="./assets/img/rooms/room%206.jpg" alt="room 6">
+      </div>
+      <div class="item-context">
+        <h2 id="Executive1">Executive Room</h2>
+        <div class="d-flex align-items-center">
+          <mat-icon>groups</mat-icon><span>Capability <span id="Executive1-capacity">5</span></span>&nbsp;&nbsp;
+          <mat-icon>person</mat-icon><span>Children <span id="Executive1-children">2</span></span>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consectetur, doloremque eos esse expedita
+          labore nisi officiis sequi suscipit veritatis...</p>
+        <div class="d-flex justify-content-between">
+          <mat-icon matTooltip="Wifi">wifi</mat-icon>
+          <mat-icon matTooltip="Television">tv</mat-icon>
+          <mat-icon matTooltip="Local Newspaper">newspaper</mat-icon>
+          <mat-icon matTooltip="Bathtub">bathtub</mat-icon>
+          <mat-icon matTooltip="Room Breakfast">restaurant</mat-icon>
+          <mat-icon matTooltip="Spa">hotel</mat-icon>
+          <mat-icon matTooltip="Wakeup Call">call</mat-icon>
+          <mat-icon matTooltip="Mini Bar">liquor</mat-icon>
+        </div>
+      </div>
+    </div>
 
-<!--    <div style="width: 1px; height: 250px; border: 1px solid silver" class="d-none d-md-block"></div>-->
+    <div style="width: 1px; height: 250px; border: 1px solid silver" class="d-none d-md-block"></div>
 
-<!--    <div class="item-right d-flex flex-column align-items-center justify-content-center">-->
-<!--      <span>price</span>-->
-<!--      <h2 [(ngModel)]="selectRoomPrice" ngDefaultControl >$94.00</h2>-->
-<!--      <button>SELECT ROOM</button>-->
-<!--    </div>-->
-<!--  </div>-->
+    <div class="item-right d-flex flex-column align-items-center justify-content-center">
+      <span>price</span>
+      <h2 id="Executive1-price">$94.00</h2>
+      <button (click)="Executive1Click()">SELECT ROOM</button>
+    </div>
+  </div>
 
-<!--  <div class="item d-md-flex d-lg-flex align-items-center justify-content-center">-->
-<!--    <div class="item-left d-md-flex d-lg-flex">-->
-<!--      <div class="item-image-div">-->
-<!--        <img src="./assets/img/rooms/room%207.jpg" alt="room 7">-->
-<!--      </div>-->
-<!--      <div class="item-context">-->
-<!--        <h2 [(ngModel)]="selectRoom" ngDefaultControl >Beach Villa</h2>-->
-<!--        <div class="d-flex align-items-center">-->
-<!--          <mat-icon>groups</mat-icon><span>Capability <span [(ngModel)]="selectRoomCapability" ngDefaultControl >6</span></span>&nbsp;&nbsp;-->
-<!--          <mat-icon>person</mat-icon><span>Children <span [(ngModel)]="selectRoomChildren" ngDefaultControl >2</span></span>-->
-<!--        </div>-->
-<!--        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consectetur, doloremque eos esse expedita-->
-<!--          labore nisi officiis sequi suscipit veritatis...</p>-->
-<!--        <div class="d-flex justify-content-between">-->
-<!--          <mat-icon matTooltip="Wifi">wifi</mat-icon>-->
-<!--          <mat-icon matTooltip="Television">tv</mat-icon>-->
-<!--          <mat-icon matTooltip="Local Newspaper">newspaper</mat-icon>-->
-<!--          <mat-icon matTooltip="Bathtub">bathtub</mat-icon>-->
-<!--          <mat-icon matTooltip="Room Breakfast">restaurant</mat-icon>-->
-<!--          <mat-icon matTooltip="Spa">hotel</mat-icon>-->
-<!--          <mat-icon matTooltip="Wakeup Call">call</mat-icon>-->
-<!--          <mat-icon matTooltip="Mini Bar">liquor</mat-icon>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
+  <div class="item d-md-flex d-lg-flex align-items-center justify-content-center">
+    <div class="item-left d-md-flex d-lg-flex">
+      <div class="item-image-div">
+        <img src="./assets/img/rooms/room%207.jpg" alt="room 7">
+      </div>
+      <div class="item-context">
+        <h2 id="Beach">Beach Villa</h2>
+        <div class="d-flex align-items-center">
+          <mat-icon>groups</mat-icon><span>Capability <span id="Beach-capacity">6</span></span>&nbsp;&nbsp;
+          <mat-icon>person</mat-icon><span>Children <span id="Beach-children">2</span></span>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consectetur, doloremque eos esse expedita
+          labore nisi officiis sequi suscipit veritatis...</p>
+        <div class="d-flex justify-content-between">
+          <mat-icon matTooltip="Wifi">wifi</mat-icon>
+          <mat-icon matTooltip="Television">tv</mat-icon>
+          <mat-icon matTooltip="Local Newspaper">newspaper</mat-icon>
+          <mat-icon matTooltip="Bathtub">bathtub</mat-icon>
+          <mat-icon matTooltip="Room Breakfast">restaurant</mat-icon>
+          <mat-icon matTooltip="Spa">hotel</mat-icon>
+          <mat-icon matTooltip="Wakeup Call">call</mat-icon>
+          <mat-icon matTooltip="Mini Bar">liquor</mat-icon>
+        </div>
+      </div>
+    </div>
 
-<!--    <div style="width: 1px; height: 250px; border: 1px solid silver" class="d-none d-md-block"></div>-->
+    <div style="width: 1px; height: 250px; border: 1px solid silver" class="d-none d-md-block"></div>
 
-<!--    <div class="item-right d-flex flex-column align-items-center justify-content-center">-->
-<!--      <span>price</span>-->
-<!--      <h2 [(ngModel)]="selectRoomPrice" ngDefaultControl >$94.00</h2>-->
-<!--      <button>SELECT ROOM</button>-->
-<!--    </div>-->
-<!--  </div>-->
+    <div class="item-right d-flex flex-column align-items-center justify-content-center">
+      <span>price</span>
+      <h2 id="Beach-price">$94.00</h2>
+      <button (click)="BeachClick()">SELECT ROOM</button>
+    </div>
+  </div>
 
-<!--  <div class="item d-md-flex d-lg-flex align-items-center justify-content-center">-->
-<!--    <div class="item-left d-md-flex d-lg-flex">-->
-<!--      <div class="item-image-div">-->
-<!--        <img src="./assets/img/rooms/room%208.jpg" alt="room 8">-->
-<!--      </div>-->
-<!--      <div class="item-context">-->
-<!--        <h2 [(ngModel)]="selectRoom" ngDefaultControl >Exclusive Suite</h2>-->
-<!--        <div class="d-flex align-items-center">-->
-<!--          <mat-icon>groups</mat-icon><span>Capability <span [(ngModel)]="selectRoomCapability" ngDefaultControl >7</span></span>&nbsp;&nbsp;-->
-<!--          <mat-icon>person</mat-icon><span>Children <span [(ngModel)]="selectRoomChildren" ngDefaultControl >2</span></span>-->
-<!--        </div>-->
-<!--        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consectetur, doloremque eos esse expedita-->
-<!--          labore nisi officiis sequi suscipit veritatis...</p>-->
-<!--        <div class="d-flex justify-content-between">-->
-<!--          <mat-icon matTooltip="Wifi">wifi</mat-icon>-->
-<!--          <mat-icon matTooltip="Television">tv</mat-icon>-->
-<!--          <mat-icon matTooltip="Local Newspaper">newspaper</mat-icon>-->
-<!--          <mat-icon matTooltip="Bathtub">bathtub</mat-icon>-->
-<!--          <mat-icon matTooltip="Room Breakfast">restaurant</mat-icon>-->
-<!--          <mat-icon matTooltip="Spa">hotel</mat-icon>-->
-<!--          <mat-icon matTooltip="Wakeup Call">call</mat-icon>-->
-<!--          <mat-icon matTooltip="Mini Bar">liquor</mat-icon>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
+  <div class="item d-md-flex d-lg-flex align-items-center justify-content-center">
+    <div class="item-left d-md-flex d-lg-flex">
+      <div class="item-image-div">
+        <img src="./assets/img/rooms/room%208.jpg" alt="room 8">
+      </div>
+      <div class="item-context">
+        <h2 id="Exclusive">Exclusive Suite</h2>
+        <div class="d-flex align-items-center">
+          <mat-icon>groups</mat-icon><span>Capability <span id="Exclusive-capacity">7</span></span>&nbsp;&nbsp;
+          <mat-icon>person</mat-icon><span>Children <span id="Exclusive-children">2</span></span>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consectetur, doloremque eos esse expedita
+          labore nisi officiis sequi suscipit veritatis...</p>
+        <div class="d-flex justify-content-between">
+          <mat-icon matTooltip="Wifi">wifi</mat-icon>
+          <mat-icon matTooltip="Television">tv</mat-icon>
+          <mat-icon matTooltip="Local Newspaper">newspaper</mat-icon>
+          <mat-icon matTooltip="Bathtub">bathtub</mat-icon>
+          <mat-icon matTooltip="Room Breakfast">restaurant</mat-icon>
+          <mat-icon matTooltip="Spa">hotel</mat-icon>
+          <mat-icon matTooltip="Wakeup Call">call</mat-icon>
+          <mat-icon matTooltip="Mini Bar">liquor</mat-icon>
+        </div>
+      </div>
+    </div>
 
-<!--    <div style="width: 1px; height: 250px; border: 1px solid silver" class="d-none d-md-block"></div>-->
+    <div style="width: 1px; height: 250px; border: 1px solid silver" class="d-none d-md-block"></div>
 
-<!--    <div class="item-right d-flex flex-column align-items-center justify-content-center">-->
-<!--      <span>price</span>-->
-<!--      <h2 [(ngModel)]="selectRoomPrice" ngDefaultControl >$94.00</h2>-->
-<!--      <button>SELECT ROOM</button>-->
-<!--    </div>-->
-<!--  </div>-->
+    <div class="item-right d-flex flex-column align-items-center justify-content-center">
+      <span>price</span>
+      <h2 id="Exclusive-price">$94.00</h2>
+      <button (click)="ExclusiveClick()">SELECT ROOM</button>
+    </div>
+  </div>
 </div>
