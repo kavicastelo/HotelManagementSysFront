@@ -5,10 +5,10 @@
         <img src="./assets/img/rooms/room%209.jpg" alt="room 9">
       </div>
       <div class="item-context">
-        <h2>Penthouse Suite</h2>
+        <h2 id="Penthouse">Penthouse Suite</h2>
         <div class="d-flex align-items-center">
-          <mat-icon>groups</mat-icon><span>Capability 9</span>&nbsp;&nbsp;
-          <mat-icon>person</mat-icon><span>Children 2</span>
+          <mat-icon>groups</mat-icon><span>Capability <span id="Penthouse-capacity">9</span></span>&nbsp;&nbsp;
+          <mat-icon>person</mat-icon><span>Children <span id="Penthouse-children">2</span></span>
         </div>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consectetur, doloremque eos esse expedita
           labore nisi officiis sequi suscipit veritatis...</p>
@@ -29,8 +29,8 @@
 
     <div class="item-right d-flex flex-column align-items-center justify-content-center">
       <span>price</span>
-      <h2>$94.00</h2>
-      <button>SELECT ROOM</button>
+      <h2 id="Penthouse-price">$94.00</h2>
+      <button (click)="PenthouseClick()">SELECT ROOM</button>
     </div>
   </div>
 
@@ -40,10 +40,10 @@
         <img src="./assets/img/rooms/room%202.jpg" alt="room 2">
       </div>
       <div class="item-context">
-        <h2>Luxury Suite</h2>
+        <h2 id="Luxury">Luxury Suite</h2>
         <div class="d-flex align-items-center">
-          <mat-icon>groups</mat-icon><span>Capability 9</span>&nbsp;&nbsp;
-          <mat-icon>person</mat-icon><span>Children 2</span>
+          <mat-icon>groups</mat-icon><span>Capability <span id="Luxury-capacity">9</span></span>&nbsp;&nbsp;
+          <mat-icon>person</mat-icon><span>Children <span id="Luxury-children">2</span></span>
         </div>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consectetur, doloremque eos esse expedita
           labore nisi officiis sequi suscipit veritatis...</p>
@@ -64,8 +64,8 @@
 
     <div class="item-right d-flex flex-column align-items-center justify-content-center">
       <span>price</span>
-      <h2>$94.00</h2>
-      <button>SELECT ROOM</button>
+      <h2 id="Luxury-price">$94.00</h2>
+      <button (click)="LuxuryClick()">SELECT ROOM</button>
     </div>
   </div>
 

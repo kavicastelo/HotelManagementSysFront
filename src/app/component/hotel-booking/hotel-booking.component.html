@@ -68,13 +68,18 @@
         </div>
       </div>
 
-      <div class="card" style="width: 100%">
-        <div class="card-body">
-          <h3 class="card-title">Cart</h3>
-          <hr>
-          <h5 class="card-subtitle mb-2 text-muted">your cart is empty</h5>
+      <form style="width: 100%">
+        <div class="card" style="width: 100%">
+          <div class="card-body">
+            <h3 class="card-title">Cart</h3>
+            <hr>
+            <h2 [innerHTML]="selectedRoom"></h2>
+            <h3 [innerHTML]="roomPrice"></h3>
+            <h5 class="card-subtitle mb-2 text-muted">{{cartIsEmpty?'capacity '+roomCapacity:'your cart is empty'}}</h5>
+            <h5 [innerHTML]="'Children '+childrenCapacity" class="card-subtitle mb-2 text-muted"></h5>
+          </div>
         </div>
-      </div>
+      </form>
 
       <div class="card" style="width: 100%; margin-bottom: 10%">
         <div class="card-body">

@@ -10,6 +10,8 @@ export class HotelBookingComponent implements OnInit {
   ArrivalMinDate = new Date();
   public DepartureMinDate = new Date();
 
+  public cartIsEmpty:any;
+
   public arrivalValue = localStorage.getItem("arrivalDate");
   public arrivalValueDate = new Date(''+this.arrivalValue);
   public departureValue = localStorage.getItem("departureDate");
@@ -17,9 +19,21 @@ export class HotelBookingComponent implements OnInit {
   public adultValue = localStorage.getItem("customers");
   public childrenValue = localStorage.getItem("children");
 
+  public selectedRoom = localStorage.getItem("selectedRoom");
+  public roomPrice = localStorage.getItem("roomPrice");
+  public childrenCapacity = localStorage.getItem("childrenCapacity");
+  public roomCapacity = localStorage.getItem("roomCapacity");
+
   constructor() { }
 
   ngOnInit(): void {
+
+    if (this.selectedRoom!=null){
+      this.cartIsEmpty = true;
+    }
+    else{
+      this.cartIsEmpty = false;
+    }
   }
 
 }
