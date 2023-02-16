@@ -36,6 +36,9 @@ import {Blog6Component} from "./component/BLOG/blog-single/blog6/blog6.component
 import {Blog7Component} from "./component/BLOG/blog-single/blog7/blog7.component";
 import {Blog8Component} from "./component/BLOG/blog-single/blog8/blog8.component";
 import {BlogCommonComponent} from "./component/BLOG/blog-single/blog-common/blog-common.component";
+import {ExtraFeaturesComponent} from "./component/BOOKING/extra-features/extra-features.component";
+import {CartComponent} from "./component/BOOKING/cart/cart.component";
+import {CheckoutComponent} from "./component/BOOKING/checkout/checkout.component";
 
 const routes: Routes = [
   {path:"", redirectTo:"/home",pathMatch:"full"},
@@ -96,6 +99,9 @@ const routes: Routes = [
           {path:"", component:BlogCommonComponent},
         ]},
     ]},
+  {path:"extra", component:ExtraFeaturesComponent},
+  {path:"cart", component:CartComponent},
+  {path:"checkout", component:CheckoutComponent},
   {path:"**", component:NotFoundComponent}
 ];
 

@@ -20,11 +20,6 @@ export class HotelBookingComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-
-    console.log(this.arrivalValue);
-    console.log(this.departureValue);
-    console.log(this.adultValue);
-    console.log(this.childrenValue);
   }
 
 }

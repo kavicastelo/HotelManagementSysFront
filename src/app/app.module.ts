@@ -49,6 +49,9 @@ import { Blog6Component } from './component/BLOG/blog-single/blog6/blog6.compone
 import { Blog7Component } from './component/BLOG/blog-single/blog7/blog7.component';
 import { Blog8Component } from './component/BLOG/blog-single/blog8/blog8.component';
 import { BlogCommonComponent } from './component/BLOG/blog-single/blog-common/blog-common.component';
+import { ExtraFeaturesComponent } from './component/BOOKING/extra-features/extra-features.component';
+import { CartComponent } from './component/BOOKING/cart/cart.component';
+import { CheckoutComponent } from './component/BOOKING/checkout/checkout.component';
 
 @NgModule({
   declarations: [
@@ -88,7 +91,10 @@ import { BlogCommonComponent } from './component/BLOG/blog-single/blog-common/bl
     Blog6Component,
     Blog7Component,
     Blog8Component,
-    BlogCommonComponent
+    BlogCommonComponent,
+    ExtraFeaturesComponent,
+    CartComponent,
+    CheckoutComponent
   ],
   imports: [
     BrowserModule,
