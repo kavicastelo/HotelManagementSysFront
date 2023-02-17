@@ -1,1 +1,50 @@
-<p>cart works!</p>
+<div class="container">
+  <h1>Cart</h1>
+  <table>
+    <thead>
+    <tr>
+      <th></th>
+      <th>Room type</th>
+      <th>Capacity</th>
+      <th>Quantity</th>
+      <th>Check - in</th>
+      <th>Check - out</th>
+      <th>Night</th>
+      <th>Gross Total</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td><mat-icon>close</mat-icon></td>
+      <td>{{room}}</td>
+      <td>{{capacity}}</td>
+      <td>1</td>
+      <td>{{checkIn}}</td>
+      <td>{{checkOut}}</td>
+      <td>1</td>
+      <td>${{price}}</td>
+    </tr>
+    <tr>
+      <td colspan="7" class="td-1">Sub Total</td>
+      <td style="font-weight: bold">${{price}}</td>
+    </tr>
+    <tr>
+      <td colspan="7" class="td-1">Tax</td>
+      <td>10%</td>
+    </tr>
+    <tr>
+      <td colspan="7" class="td-1">Grand Total</td>
+      <td style="font-weight: bold">${{priceWithTax}}</td>
+    </tr>
+    <tr>
+      <td colspan="7" class="td-1">Advance Payment (50% of Grand Total)</td>
+      <td>${{advancedPayment}}</td>
+    </tr>
+    </tbody>
+  </table>
+
+  <div class="btn-div">
+    <button routerLink="/checkout">CHECK OUT</button>
+    <button (click)="reloadPage()">UPDATE</button>
+  </div>
+</div>

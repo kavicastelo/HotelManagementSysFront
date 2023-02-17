@@ -1,0 +1,35 @@
+.container {
+  overflow-x: auto;
+  padding: 5vw 0;
+
+  table {
+    width: 100%;
+
+    th, td {
+      border: 1px solid silver;
+      text-align: center;
+      padding: 10px;
+      color: dimgray;
+    }
+
+    .td-1 {
+      text-align: left;
+    }
+  }
+
+  .btn-div{
+    margin-top: 40px;
+
+    button{
+      margin-right: 10px;
+      padding: 10px 25px;
+      background-color: #ccbaa4;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+    button:hover{
+      background-color: #dccab4;
+    }
+  }
+}
