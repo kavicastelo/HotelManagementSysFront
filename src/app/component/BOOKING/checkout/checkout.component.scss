@@ -1,0 +1,53 @@
+.container {
+  overflow-x: auto;
+  padding: 5vw 0;
+
+  table {
+    width: 100%;
+
+    th, td {
+      border: 1px solid silver;
+      text-align: center;
+      padding: 10px;
+      color: dimgray;
+    }
+
+    .td-1 {
+      text-align: left;
+    }
+  }
+}
+
+.div-2{
+  .customer-details-1{
+    width: 100%;
+    min-height: 200px;
+    padding: 20px;
+    border: 1px solid silver;
+
+    ::ng-deep .mat-form-field-appearance-outline#exiting-customer-email .mat-form-field-outline {
+      background-color: rgb(255,255,255);
+      border-radius: 5px;
+    }
+    #exiting-customer-email{
+      width: 100%;
+    }
+
+    h2{
+      font-size: 20px;
+      font-weight: normal;
+      color: dimgray;
+    }
+
+    button{
+      background-color: #dccab4;
+      color: white;
+      border-radius: 5px;
+      border: none;
+      padding: 10px 20px;
+    }
+    button:hover{
+      background-color: #ccbaa4;
+    }
+  }
+}

@@ -1,1 +1,66 @@
-<p>checkout works!</p>
+<div class="container">
+  <h1>Booking Rooms</h1>
+  <table>
+    <thead>
+    <tr>
+      <th></th>
+      <th>Room type</th>
+      <th>Capacity</th>
+      <th>Quantity</th>
+      <th>Check - in</th>
+      <th>Check - out</th>
+      <th>Night</th>
+      <th>Gross Total</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td><mat-icon>close</mat-icon></td>
+      <td>{{room}}</td>
+      <td>{{capacity}}</td>
+      <td>1</td>
+      <td>{{checkIn}}</td>
+      <td>{{checkOut}}</td>
+      <td>1</td>
+      <td>${{price}}</td>
+    </tr>
+    <tr>
+      <td colspan="7" class="td-1">Sub Total</td>
+      <td style="font-weight: bold">${{price}}</td>
+    </tr>
+    <tr>
+      <td colspan="7" class="td-1">Tax</td>
+      <td>10%</td>
+    </tr>
+    <tr>
+      <td colspan="7" class="td-1">Grand Total</td>
+      <td style="font-weight: bold">${{priceWithTax}}</td>
+    </tr>
+    <tr>
+      <td colspan="7" class="td-1">Advance Payment (50% of Grand Total)</td>
+      <td>${{advancedPayment}}</td>
+    </tr>
+    <tr>
+      <td colspan="8" style="text-align: right">
+        <mat-checkbox>I want to pay all</mat-checkbox>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+
+</div>
+
+<div class="container div-2">
+  <h1>Customer Details</h1>
+  <div class="customer-details-1">
+    <h2>Exciting Customer?</h2>
+    <form style="width: 100%">
+      <mat-form-field appearance="outline" id="exiting-customer-email">
+        <mat-label>Enter your email</mat-label>
+        <input matInput placeholder="pat@example.com" [formControl]="email" required>
+        <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+      </mat-form-field>
+      <button>APPLY</button>
+    </form>
+  </div>
+</div>
