@@ -7,7 +7,6 @@ import {FormControl, Validators} from "@angular/forms";
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'hotelManagementFront';
 
   email = new FormControl('', [Validators.required, Validators.email]);
 
