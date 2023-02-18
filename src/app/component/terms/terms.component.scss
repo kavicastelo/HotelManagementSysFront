@@ -1,17 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;700&display=swap');
-
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: #242836;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #333541;
-}
-
 * {
 
   margin: 0;
@@ -57,7 +43,7 @@ body,html {
 
   font-size: 18px;
   color: #fff;
-  font-family: Arial;
+  font-family: Arial sans-serif;
   cursor: pointer;
 
 }
@@ -74,7 +60,7 @@ body,html {
 .title-mobile {
   font-size: 18px;
   color: #fff;
-  font-family: Arial;
+  font-family: Arial sans-serif;
   cursor: pointer;
   padding-top: 30px;
 }
@@ -83,7 +69,7 @@ a {
   text-decoration: none;
   font-size: 16px;
   color: #6D6F79;
-  font-family: Arial;
+  font-family: Arial sans-serif;
   cursor: pointer;
 }
 
@@ -95,7 +81,6 @@ a:hover {
 
 .card {
   margin-top: 100px;
-  margin-bottom: 100px;
   height : 1950px;
   width: 1200px;
   border-radius: 30px;
@@ -106,14 +91,14 @@ a:hover {
 
 .card .primary-heading {
   text-align: center;
-  font-family: josefin sans;
+  font-family: josefin sans-serif;
   color: white;
   padding-top: 50px ;
   font-size: 4em;
 }
 
 .paragraph {
-  font-family: josefin sans;
+  font-family: josefin sans sans-serif;
   color: rgb(179, 179, 179);
   margin-left: 50px;
   margin-right: 25px;
@@ -130,9 +115,8 @@ a:hover {
 
 .footer-heading {
   text-align: center;
-  font-family: josefin sans;
+  font-family: josefin sans sans-serif;
   color: white;
-  margin-bottom: 50px;
   font-size: 2em;
   line-height: 35px;
 }
@@ -140,7 +124,6 @@ a:hover {
 @media only screen and (max-width: 1218px) {
   .card {
     margin-top: 100px;
-    margin-bottom: 100px;
     height : 2050px;
     width: 1000px;
     border-radius: 30px;
@@ -153,7 +136,6 @@ a:hover {
 @media only screen and (max-width: 1012px) {
   .card {
     margin-top: 100px;
-    margin-bottom: 100px;
     height : 2350px;
     width: 800px;
     border-radius: 30px;
@@ -166,7 +148,6 @@ a:hover {
 @media only screen and (max-width: 832px) {
   .card {
     margin-top: 100px;
-    margin-bottom: 100px;
     height : 2950px;
     width: 600px;
     border-radius: 30px;
@@ -186,7 +167,6 @@ a:hover {
 @media only screen and (max-width: 626px) {
   .card {
     margin-top: 100px;
-    margin-bottom: 100px;
     height : 3850px;
     width: 450px;
     border-radius: 30px;
@@ -211,7 +191,6 @@ a:hover {
 @media only screen and (max-width: 480px) {
   .card {
     margin-top: 100px;
-    margin-bottom: 100px;
     height : 5050px;
     width: 350px;
     border-radius: 30px;
@@ -228,7 +207,6 @@ a:hover {
 @media only screen and (max-width: 365px) {
   .card {
     margin-top: 100px;
-    margin-bottom: 100px;
     height : 6300px;
     width: 290px;
     border-radius: 30px;
