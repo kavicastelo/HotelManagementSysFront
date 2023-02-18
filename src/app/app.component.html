@@ -90,14 +90,20 @@
             <h3>QUICK LINKS</h3>
             <span routerLink="/home">Home</span>
             <span routerLink="/terms">Terms & Conditions</span>
-            <span>FAQ</span>
+            <span routerLink="/faq">FAQ</span>
             <span>News Letter</span>
           </div>
           <div
             class="col-12 col-sm-6 col-md-6 col-lg-3 d-flex flex-column footer-cont">
             <h3>DONT' MISS ANY UPDATES</h3>
-            <input type="email" placeholder="ex: exampe@gmail.com">
-            <button>SUBSCRIBE NOW</button>
+            <form style="width: 100%" (ngSubmit)="subscriptionAlert()">
+              <mat-form-field appearance="outline" id="footer-email">
+                <mat-label>Enter your email</mat-label>
+                <input matInput placeholder="pat@example.com" [formControl]="email" required>
+                <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+              </mat-form-field>
+              <button>SUBSCRIBE NOW</button>
+            </form>
           </div>
         </div>
       </div>

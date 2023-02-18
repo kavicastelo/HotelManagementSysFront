@@ -39,6 +39,7 @@ import {BlogCommonComponent} from "./component/BLOG/blog-single/blog-common/blog
 import {ExtraFeaturesComponent} from "./component/BOOKING/extra-features/extra-features.component";
 import {CartComponent} from "./component/BOOKING/cart/cart.component";
 import {CheckoutComponent} from "./component/BOOKING/checkout/checkout.component";
+import {FaqComponent} from "./component/faq/faq.component";
 
 const routes: Routes = [
   {path:"", redirectTo:"/home",pathMatch:"full"},
@@ -102,6 +103,7 @@ const routes: Routes = [
   {path:"extra", component:ExtraFeaturesComponent},
   {path:"cart", component:CartComponent},
   {path:"checkout", component:CheckoutComponent},
+  {path:"faq", component:FaqComponent},
   {path:"**", component:NotFoundComponent}
 ];
 

@@ -52,6 +52,8 @@ import { BlogCommonComponent } from './component/BLOG/blog-single/blog-common/bl
 import { ExtraFeaturesComponent } from './component/BOOKING/extra-features/extra-features.component';
 import { CartComponent } from './component/BOOKING/cart/cart.component';
 import { CheckoutComponent } from './component/BOOKING/checkout/checkout.component';
+import { FaqComponent } from './component/faq/faq.component';
+import {MatExpansionModule} from "@angular/material/expansion";
 
 @NgModule({
   declarations: [
@@ -94,23 +96,25 @@ import { CheckoutComponent } from './component/BOOKING/checkout/checkout.compone
     BlogCommonComponent,
     ExtraFeaturesComponent,
     CartComponent,
-    CheckoutComponent
+    CheckoutComponent,
+    FaqComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatFormFieldModule,
-    MatDatepickerModule,
-    MatInputModule,
-    MatNativeDateModule,
-    MatSelectModule,
-    FormsModule,
-    MatIconModule,
-    MatTooltipModule,
-    MatCheckboxModule,
-    ReactiveFormsModule,
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MatFormFieldModule,
+        MatDatepickerModule,
+        MatInputModule,
+        MatNativeDateModule,
+        MatSelectModule,
+        FormsModule,
+        MatIconModule,
+        MatTooltipModule,
+        MatCheckboxModule,
+        ReactiveFormsModule,
+        MatExpansionModule,
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
