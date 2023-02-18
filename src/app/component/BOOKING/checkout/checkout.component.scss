@@ -1,6 +1,6 @@
-.container {
+.div-1 {
   overflow-x: auto;
-  padding: 5vw 0;
+  padding: 5vw 1vw;
 
   table {
     width: 100%;
@@ -19,7 +19,7 @@
 }
 
 .div-2{
-  .customer-details-1{
+  .customer-details-1, .customer-details-2, .payment-method, .additional{
     width: 100%;
     min-height: 200px;
     padding: 20px;
@@ -50,4 +50,26 @@
       background-color: #ccbaa4;
     }
   }
+
+  .customer-details-2, .payment-method{
+    margin-bottom: 5vw;
+    .new-customer-form-field{
+      width: 100%;
+    }
+  }
+
+  .btn-checkout{
+    padding: 8px 40px;
+    background-color: #dccab4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: fit-content;
+    margin-top: 8px;
+    margin-bottom: 5vw;
+  }
+  .btn-checkout:hover{
+    background-color: #ccbaa4;
+  }
+
 }
